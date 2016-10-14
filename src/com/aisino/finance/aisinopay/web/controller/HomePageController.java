@@ -4,6 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * 
+ * Ê×Ò³Ìø×ª¿ØÖÆ
+ *
+ */
+
 @Controller
 @RequestMapping("/home")
 public class HomePageController {
