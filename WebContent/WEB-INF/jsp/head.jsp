@@ -51,28 +51,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active">
+						<li class="">
 							 <a href="#">首页</a>
 						</li>
 						<li class="dropdown_1">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品中心<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="#">T8智能支付终端</a>
+									 <a href="${pageContext.request.contextPath}/home/t8pay.do">T8智能支付终端</a>
 								</li>
 								<li>
-									 <a href="#">航e付</a>
+									 <a href="${pageContext.request.contextPath}/home/epay.do">航e付</a>
 								</li>
 								
 								<li class="divider">
 								</li>
 								<li>
-									 <a href="#">百富</a>
+									 <a href="${pageContext.request.contextPath}/home/baifu.do">百富</a>
 								</li>
 								<li class="divider">
 								</li>
 								<li>
-									 <a href="#">联迪</a>
+									 <a href="${pageContext.request.contextPath}/home/liandi.do">联迪</a>
 								</li>
 							</ul>
 						</li>

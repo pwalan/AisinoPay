@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 
- * ��ҳ��ת����
+ * 首页跳转控制
  *
  */
 
@@ -21,5 +21,35 @@ public class HomePageController {
 		return mav;
 	}
 	
+	/**
+	 * 产品中心跳转控制
+	 */
+	@RequestMapping("/t8pay")
+	public ModelAndView t8pay(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("productcenter/t8pay");
+		return mav;
+	}
+	
+	@RequestMapping("/epay")
+	public ModelAndView epay(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("productcenter/epay");
+		return mav;
+	}
+	
+	@RequestMapping("/baifu")
+	public ModelAndView baifu(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("productcenter/baifu");
+		return mav;
+	}
+	
+	@RequestMapping("/liandi")
+	public ModelAndView liandi(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("productcenter/liandi");
+		return mav;
+	}
 	
 }
