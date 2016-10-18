@@ -80,24 +80,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">解决方案<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="${pageContext.request.contextPath}/home/solution_main.do">中小企业进销存管理</a>
+									 <a href="${pageContext.request.contextPath}/home/main.do">中小企业进销存管理</a>
 								</li>
 								<li>
-									 <a href="#">预付卡</a>
+									 <a href="${pageContext.request.contextPath}/home/pre_pay.do">预付卡</a>
 								</li>
 								<li>
-									 <a href="#">银医通</a>
-								</li>
-								
-								<li>
-									 <a href="#">银校通</a>
+									 <a href="${pageContext.request.contextPath}/home/medical.do">银医通</a>
 								</li>
 								
 								<li>
-									 <a href="#">财税横向联网</a>
+									 <a href="${pageContext.request.contextPath}/home/school.do">银校通</a>
+								</li>
+								
+								<li>
+									 <a href="${pageContext.request.contextPath}/home/tax.do">财税横向联网</a>
 								</li>
 								<li>
-									 <a href="#">POS停车收费</a>
+									 <a href="${pageContext.request.contextPath}/home/pos.do">POS停车收费</a>
 								</li>
 								
 							</ul>
@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</ul>
 						</li>
 						<li class="dropdown_4">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载中心</a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载中心<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="#">T8智能支付终端</a>

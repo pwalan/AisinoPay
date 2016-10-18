@@ -23,14 +23,14 @@ public class HomePageController {
 		return mav;
 	}
 	
-
+/*
 	@RequestMapping("/solution_main") //do name 
 	public ModelAndView solution_main(){
 		ModelAndView mav=new ModelAndView(); 
 		mav.setViewName("solution/solution_main"); //jsp location
 		return mav;
 	}
-	
+	*/
 
 	/**
 	 * 产品中心跳转控制
@@ -62,6 +62,44 @@ public class HomePageController {
 		mav.setViewName("productcenter/liandi");
 		return mav;
 	}
-
-	
+	/**
+	 * 解决方案跳转控制
+	 * 
+	 */
+	@RequestMapping("/main")
+	public ModelAndView main(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/solution_main");
+		return mav;
+	}
+	@RequestMapping("/pre_pay")
+	public ModelAndView pre_pay(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/pre_pay");
+		return mav;
+	}
+	@RequestMapping("/medical")
+	public ModelAndView medical(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/medical");
+		return mav;
+	}
+	@RequestMapping("/school")
+	public ModelAndView school(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/school");
+		return mav;
+	}
+	@RequestMapping("/tax")
+	public ModelAndView tax(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/tax");
+		return mav;
+	}
+	@RequestMapping("/pos")
+	public ModelAndView pos(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("solution/pos");
+		return mav;
+	}
 }
