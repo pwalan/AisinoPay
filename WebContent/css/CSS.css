@@ -1,0 +1,150 @@
+/* 宽屏时的样式  */
+/*整体页面样式  */
+.header{width:1280px;height:113px;}   /* 113px 91  border:0px;height:96px; */
+.centers{border:0px;position:relative;width:1280px;}  /* 2530px  637*/
+.leftcenter{height:100%;width:296px;position:absolute; left:0px;top:0px;}
+.rightcenter{height:100%;right:0px; position: absolute;left:296px;top:0px;}
+.footer{width:1280px;height:65px;}   /* 65  */
+.leftcenter2{height:100%;width:310px;position:absolute; left:0px;top:0px;}
+.rightcenter2{height:100%;right:0px; position: absolute;left:310px;top:0px;}
+
+/* 左侧导航样式   */
+.leftPage{border:0px;position:relative;}
+.leftInfo{height:100%;width:167px;position:absolute; left:64px;top:9px;}
+.leftTitle1{font-size:24px;font-family:微软雅黑;color:#004ea2;}
+.leftTitle2{font-size:12px;color:grey;font-family:微软雅黑;}
+.leftTitle3{font-size:15px;font-family:微软雅黑;color:#004ea2;cursor:pointer;}
+.leftLine{border:thin solid #e3d9ca;}
+.splitImg{height:100%;width:4px;position:absolute; right:0px;top:0px;}
+.leftTitle4{font-size:15px;font-family:微软雅黑;cursor:pointer;
+            margin-left:50px;margin-top:5px;width:150px;
+            height:24px;line-height:24px;
+            }
+
+/* 窄屏时的样式  */
+/*整体页面样式  */
+.header800{width:800px;height:96px;}   /* 113px 91  border:0px;height:96px; */
+.centers800{border:0px;position:relative;width:800px;}  /* 2530px  637*/
+.leftcenter800{height:100%;width:200px;position:absolute; left:0px;top:0px;}
+.rightcenter800{height:100%;right:0px; position: absolute;left:200px;top:0px;}
+.footer800{width:803px;height:65px;}   /* 65  */
+
+/* 左侧导航样式   */
+.leftPage800{border:0px;position:relative;}
+.leftInfo800{height:100%;width:160px;position:absolute; left:8px;top:4px;} /*top:9*/
+.leftTitle1_800{font-size:16px;font-family:微软雅黑;color:#004ea2;}
+.leftTitle2_800{font-size:10px;color:grey;font-family:微软雅黑;}
+.leftTitle3_800{font-size:12px;font-family:微软雅黑;color:#004ea2;cursor:default;}
+.leftLine800{border:thin solid #e3d9ca;}
+.splitImg800{height:100%;width:4px;position:absolute; right:0px;top:0px;}
+.leftTitle4_800{font-size:12px;font-family:微软雅黑;cursor:pointer;
+                margin-left:28px;margin-top:5px;
+                width:150px;height:24px;line-height:24px;}
+
+/* 宽屏时的样式  */
+/* 航信支付模块公用CSS  */
+.totalDiv{margin-left:63px;width:855px;}
+.subDiv{margin-top:38px;background-color:white;}
+.subTable{width:100%;height:100%;border:solid 1px rgb(208,208,208);;cellpadding:0;cellspacing:0;}
+.lineSelDiv{position:absolute;width:120px;margin-top:35px;margin-left:-3px;}
+.lineUnselDiv{position:absolute;margin-left:117px;width:734px;margin-top:35px;}
+.lineSel{border-top:3px solid #017cfe;border-bottom:0px;border-left:0px;border-right:0px;}
+.lineUnsel{height:0px;border-top:0px; border-right:0px; border-bottom:1px solid grey; border-left:0px;}
+.list_left{width:217px;height:27px;font-family:微软雅黑;font-size:15px;}
+.list_mid{width:11px;height:27px;}
+.list_right{width:550px;height:27px;font-family:微软雅黑;font-size:15px;} 
+.list_left.head{background-color:#004ea1;color:white;}
+.list_right.head{background-color:#004ea1;color:white;}
+.list_left.odd{background-color:white;}
+.list_right.odd{background-color:white;}
+.list_left.even{background-color:#d3d1d2;}
+.list_right.even{background-color:#d3d1d2;}
+.list_right_font{line-height:1.5;margin-left:77px;} 
+.title_airpay
+{
+position:absolute;
+width:100%;
+margin-left:25px;
+font-family:微软雅黑;
+font-size:18px;
+color:#017cfe;
+height:51px;
+}
+.imglist_left{position:absolute;margin-left:26px;}
+.imglist_right{position:absolute;margin-left:430px;}
+.contentlist_left{position:absolute;margin-left:151px;width:260px;:word-break:break-all;overflow:hidden;font-size:15px;}
+.contentlist_right{position:absolute;margin-left:562px;width:260px;:word-break:break-all;overflow:hidden;font-size:15px;}
+.contentlist_title{font-size:17px;font-family:微软雅黑;color:#fe9f69;margin-top:15px;}  
+.contentlist_desc{font-size:15px;font-family:微软雅黑;margin-top:8px;}
+/* 联迪、百富四个分页面的导航 */
+.posProductNavDiv{width:100%;margin-top:20px;height:42px;background-color:#ffb822;}
+.posProductNavSpan{margin-left:25px;line-height:42px;cursor:pointer;}
+.posProductNavSpan:hover{color:white;}
+.posProductNavSpan.Sel{color:#017cfe;cursor:default;}
+.posProductNavSpan.Sel:hover{color:white;}
+.posProductNavSplit{margin-left:25px;line-height:42px;}
+/* 文档下载模块相关样式   */
+.download_pdfimg{position:absolute;margin-left:26px;}
+.download_filename{position:absolute;margin-left:145px;font-size:15px;}
+.download_filename:hover{color:#017cfe;text-decoration:underline;cursor:pointer;}
+.download_hline{position:absolute;width:705px;margin-left:145px;}
+.download_hline_inner{height:0px;border-top:1px solid grey; border-right:0px; border-bottom:0px; border-left:0px solid grey;}
+.download_vline{position:absolute;margin-left:750px;}
+.download_vline_inner{border-top:0px; border-right:0px; border-bottom:0px; border-left:1px solid grey;}
+.download_size{position:absolute;margin-left:776px;font-size:15px;}
+.download_time{position:absolute;margin-left:155px;font-size:15px;}
+.download_cmd{position:absolute;margin-left:776px;cursor:pointer;}
+.productdespDiv{position:absolute;font-size:15px;margin-left:25px;margin-right:25px;margin-top:60px;}  /*产品介绍  */
+b {font-size:15px;} 
+
+/*窄屏时的样式   */
+.totalDiv800{margin-left:0px;width:553px;}
+.list_right800{width:400px;height:27px;font-size:12px;} 
+.list_right800_font{line-height:1.5;margin-left:12px;} 
+.list_right800.head{background-color:#004ea1;color:white;}
+.list_right800.odd{background-color:white;}
+.list_right800.even{background-color:#d3d1d2;}
+.imglist_left800{position:absolute;margin-left:6px;}
+.imglist_right800{position:absolute;margin-left:270px;}
+.contentlist_left800{position:absolute;margin-left:110px;width:155px;:word-break:break-all;overflow:hidden;font-size:12px;}
+.contentlist_right800{position:absolute;margin-left:380px;width:170px;:word-break:break-all;overflow:hidden;font-size:12px;}
+.contentlist_title800{font-size:14px;font-family:微软雅黑;color:#fe9f69;margin-top:15px;}  
+.contentlist_desc800{font-size:12px;font-family:微软雅黑;margin-top:8px;}
+.download_hline800{position:absolute;width:403px;margin-left:145px;}
+.download_vline800{position:absolute;margin-left:460px;}
+.download_cmd800{position:absolute;margin-left:476px;cursor:pointer;}
+.download_size800{position:absolute;margin-left:470px;font-size:15px;}
+.lineSelDiv800{position:absolute;width:120px;margin-top:35px;}
+.lineUnselDiv800{position:absolute;margin-left:120px;width:429px;margin-top:35px;}
+.lineSel800{border:1px solid #017cfe;}
+.lineUnsel800{height:0px;border-top:0px; border-right:0px; border-bottom:1px solid grey; border-left:0px;}
+.posProductNavSpan800{margin-left:10px;line-height:42px;cursor:pointer;font-size:14px;}
+.posProductNavSpan800:hover{color:white;}
+.posProductNavSplit800{margin-left:10px;line-height:42px;}
+.posProductNavSpan800.Sel{color:#017cfe;}
+.posProductNavSpan800.Sel:hover{cursor:default;}
+.title_airpay800
+{
+position:absolute;
+width:100%;
+margin-left:25px;
+font-family:微软雅黑;
+font-size:16px;
+color:#017cfe;
+height:51px;
+}
+
+/*航信支付解决方案模块公共样式   */
+.sol_ctitle{text-align:center;margin-top:40px;font-family:微软雅黑 ;font-size:22px;color:#007bff;}
+.sol_etitle{text-align:center;margin-top:2px;font-size:17px;color:#a6b2bf;}
+.sol_content{line-height:1.5;margin-top:40px;font-family:宋体 ;font-size:15px;color:#1e1e1e;}
+.sol_ctitle800{text-align:center;margin-top:40px;font-family:微软雅黑 ;font-size:18px;color:#007bff;}
+.sol_etitle800{text-align:center;margin-top:2px;font-size:15px;color:#a6b2bf;}
+.sol_content800{line-height:1.7;margin-top:40px;font-family:微软雅黑 ;font-size:12px;color:#1e1e1e;}
+
+.sol_img{text-align:center;margin-top:40px;}
+.lineUnsel_sol{height:0px;border-top:0px; border-right:0px; border-bottom:1px solid #dadada; border-left:0px;}
+
+/*分页样式  */
+.pagenosel{background:#f0efef;align:center;color:grey;font-size:14px;text-decoration:none;}
+.pagesel{background:#28599C;color:white;font-size:14px;text-decoration:none;}
