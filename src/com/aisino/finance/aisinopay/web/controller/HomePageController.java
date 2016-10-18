@@ -6,14 +6,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 
-
- * @author Saber_Lion
- * 首页控制代码
+ * 首页跳转控制
  *
  */
 
 @Controller
-@RequestMapping("/home") //folder
+@RequestMapping("/home")
 public class HomePageController {
 	
 	@RequestMapping("/index")
@@ -22,15 +20,6 @@ public class HomePageController {
 		mav.setViewName("home");
 		return mav;
 	}
-	
-/*
-	@RequestMapping("/solution_main") //do name 
-	public ModelAndView solution_main(){
-		ModelAndView mav=new ModelAndView(); 
-		mav.setViewName("solution/solution_main"); //jsp location
-		return mav;
-	}
-	*/
 
 	/**
 	 * 产品中心跳转控制
@@ -102,4 +91,5 @@ public class HomePageController {
 		mav.setViewName("solution/pos");
 		return mav;
 	}
+
 }
