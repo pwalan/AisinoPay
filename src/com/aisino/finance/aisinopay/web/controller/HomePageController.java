@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 
+
  * @author Saber_Lion
  * 首页控制代码
  *
@@ -22,6 +23,7 @@ public class HomePageController {
 		return mav;
 	}
 	
+
 	@RequestMapping("/solution_main") //do name 
 	public ModelAndView solution_main(){
 		ModelAndView mav=new ModelAndView(); 
@@ -29,6 +31,7 @@ public class HomePageController {
 		return mav;
 	}
 	
+
 	/**
 	 * 产品中心跳转控制
 	 */
@@ -59,6 +62,6 @@ public class HomePageController {
 		mav.setViewName("productcenter/liandi");
 		return mav;
 	}
-	
+
 	
 }

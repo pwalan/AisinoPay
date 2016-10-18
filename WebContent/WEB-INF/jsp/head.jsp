@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</ul>
 						</li>
 						<li class="dropdown_4">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载中心<strong class="caret"></strong></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载中心</a>
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="#">T8智能支付终端</a>
@@ -153,3 +153,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</nav>
   </body>
 </html>
+
