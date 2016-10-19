@@ -47,10 +47,20 @@
 										});
 
 					});
-	
-	
 </script>
+<style type="text/css">
+.lineUnselDiv {
+	width: 0px;
+}
 
+.download_hline_inner {
+	width: 0px;
+}
+
+.lineUnsel {
+	width: 0px;
+}
+</style>
 <body>
 	<div class="container">
 		<div class="row clearfix">
