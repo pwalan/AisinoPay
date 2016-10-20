@@ -83,12 +83,7 @@
 
 	}
 	function t8_download_func() {
-		var oForm = document.getElementById('myForm_t8');
-		var text = document.getElementById('t8_filename').innerHTML;
-		// text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-		text = "T8.pdf";
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=T8.pdf";
 	}
 </script>
 
