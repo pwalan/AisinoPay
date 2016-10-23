@@ -52,11 +52,7 @@ function e550DocDownLoad()
 }
 function e550_download_func()
 {
-   var oForm = document.getElementById('myForm_e550');
-     var text =  document.getElementById('e550_filename').innerHTML;
-    text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-    oForm.action = 'downLoadFile.action?fileName=' + text;
-     oForm.submit();
+	window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=E550.pdf";
 }
 window.onload = function()
 {

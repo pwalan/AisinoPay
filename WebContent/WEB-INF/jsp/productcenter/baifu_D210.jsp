@@ -27,11 +27,7 @@ body {
 		document.getElementById('font_productShow_D210').style.color = 'grey';
 	}
 	function d210_download_func() {
-		var oForm = document.getElementById('myForm');
-		var text = document.getElementById('d210_filename').innerHTML;
-		text = text.replace(/(^\s+)|(\s+$)/g, ""); //去除前后空格
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=D210_CHN.pdf";
 	}
 
 	window.onload = function() {

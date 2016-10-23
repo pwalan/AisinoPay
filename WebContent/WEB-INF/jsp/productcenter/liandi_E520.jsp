@@ -52,12 +52,7 @@ function e520DocDownLoad()
 }
 function e520_download_func()
 {
-  
-  	var oForm = document.getElementById('myForm_e520');
-    var text =  document.getElementById('e520_filename').innerHTML;
-    text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-    oForm.action = 'downLoadFile.action?fileName=' + text;
-    oForm.submit();
+	window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=E520.pdf";
 }
 window.onload = function()
 {

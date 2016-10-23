@@ -21,11 +21,7 @@
 		document.getElementById('font_productShow_S80').style.color = 'grey';
 	}
 	function s80_download_func() {
-		var oForm = document.getElementById('myForm');
-		var text = document.getElementById('s80_filename').innerHTML;
-		text = text.replace(/(^\s+)|(\s+$)/g, ""); //去除前后空格
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=S80_CHN_new.pdf";
 	}
 
 	window.onload = function() {

@@ -54,23 +54,14 @@
 
 	}
 
-	function e_download_func() {
-		var oForm = document.getElementById('myForm');
-
-		var text = "Aisino E-pay Store.doc"
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+	function e_download_func_h() {
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_Store.doc";
 	}
 
 	//
 
-	function soft_download_func() {
-
-		var oForm = document.getElementById('myForm');
-
-		var text = "Aisino E-pay sale.exe"
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+	function soft_download_func_h() {
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_sale.exe";
 	}
 </script>
 <body>
@@ -116,7 +107,7 @@
 								<img src="img/epay/icon_exe.png" width="98" height="108">
 							</div>
 							<div id="install_filename" class="download_filename"
-								style="margin-top: 85px;" onClick="soft_download_func()">
+								style="margin-top: 85px;" onClick="soft_download_func_h()">
 								航e付(掌中店版).exe</div>
 							<div class="download_hline" style="margin-top: 115px;">
 								<hr class="download_hline_inner">
@@ -127,7 +118,7 @@
 								18406K</div>
 							<div class="download_cmd" style="margin-top: 75px;">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="soft_download_func()">
+									onClick="soft_download_func_h()">
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -196,7 +187,7 @@
 								<img src="img/download/icon_doc.png" width="98" height="108">
 							</div>
 							<div id="sp30_filename" class="download_filename"
-								style="margin-top: 85px;" onClick="e_download_func()">
+								style="margin-top: 85px;" onClick="e_download_func_h()">
 								航e付(掌中店版)帮助文档.doc</div>
 							<div class="download_hline" style="margin-top: 115px;">
 								<hr class="download_hline_inner">
@@ -207,7 +198,7 @@
 								2720K</div>
 							<div class="download_cmd" style="margin-top: 75px;">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="e_download_func()">
+									onClick="e_download_func_h()">
 							</div>
 							<div id="vline2" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">

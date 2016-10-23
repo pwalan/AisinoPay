@@ -21,11 +21,7 @@
 		document.getElementById('font_productShow_SP30').style.color = 'grey';
 	}
 	function sp30_download_func() {
-		var oForm = document.getElementById('myForm');
-		var text = document.getElementById('sp30_filename').innerHTML;
-		text = text.replace(/(^\s+)|(\s+$)/g, ""); //去除前后空格
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=SP30_CHN_new.pdf";
 	}
 	window.onload = function() {
 

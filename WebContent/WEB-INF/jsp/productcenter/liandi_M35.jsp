@@ -42,20 +42,11 @@ function m35DocDownLoad()
 }
 function m35_download1_func()
 {
-   	var oForm = document.getElementById('myForm_m35');
-    var text =  document.getElementById('m35_filename1').innerHTML;
-    text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-    oForm.action = 'downLoadFile.action?fileName=' + text;
-    oForm.submit();
-
+	window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=M35.pdf";
 }
 function m35_download2_func()
 {
-   	var oForm = document.getElementById('myForm_m35');
-    var text =  document.getElementById('m35_filename2').innerHTML;
-    text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-    oForm.action = 'downLoadFile.action?fileName=' + text;
-    oForm.submit();
+	window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=M35_Compatible_List.pdf";
 }
 window.onload = function()
 {

@@ -33,18 +33,11 @@
 		document.getElementById('font_productShow_E_p').style.color = 'grey';
 	}
 	function e_download_func_p() {
-		var oForm = document.getElementById('myForm');
-		var text = "Aisino E-pay Card.doc";
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_Card.doc";
 	}
 	//
 	function soft_download_func_p() {
-		var oForm = document.getElementById('myForm');
-
-		var text = "Aisino E-pay card.exe"
-		oForm.action = 'downLoadFile.action?fileName=' + text;
-		oForm.submit();
+		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_card.exe";
 	}
 </script>
 <body>

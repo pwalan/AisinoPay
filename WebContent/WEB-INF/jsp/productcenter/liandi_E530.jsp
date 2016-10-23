@@ -55,12 +55,7 @@ function e530DocDownLoad()
 }
 function e530_download_func()
 {
-   	var oForm = document.getElementById('myForm_e530');
-    var text =  document.getElementById('e530_filename').innerHTML;
-    text =  text.replace(/(^\s+)|(\s+$)/g, "");  //去除前后空格
-    oForm.action = 'downLoadFile.action?fileName=' + text;
-    oForm.submit();
-
+	window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=E530.pdf";
 }
 window.onload = function()
 {

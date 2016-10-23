@@ -30,6 +30,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class FileDownloadController {
 	@RequestMapping("/download")
 	public ModelAndView download(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		//获取文件名
 		String fileName = request.getParameter("filename");
 		System.out.println(fileName);
 
@@ -37,7 +38,8 @@ public class FileDownloadController {
 		request.setCharacterEncoding("UTF-8");
 		java.io.BufferedInputStream bis = null;
 		java.io.BufferedOutputStream bos = null;
-
+		
+		//获取路径
 		String ctxPath = request.getSession().getServletContext().getRealPath("/");
 		String downLoadPath = ctxPath + "docs\\" + fileName;
 
