@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+http://www.springframework.org/schema/aop 
+http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+  http://www.springframework.org/schema/context   
+   http://www.springframework.org/schema/context/spring-context-2.5.xsd
+">
+	<context:component-scan base-package="com.aisino.finance.aisinopay" />
+	<!-- 支持aop注解 -->
+	<aop:aspectj-autoproxy />
+
+
+	<!-- 定义数据源Bean，使用C3P0数据源实现 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<!-- 指定连接数据库的驱动 -->
+		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<!-- 指定连接数据库的URL -->
+		<property name="jdbcUrl" value="jdbc:mysql://pwalan.cn:3306/aisinopay"/>
+		<!-- 指定连接数据库的用户名 -->
+		<property name="user" value="root"/>
+		<!-- 指定连接数据库的密码 -->
+		<property name="password" value="pwalan"/>
+		<!-- 指定连接数据库连接池的最大连接数 -->
+		<property name="maxPoolSize" value="20"/>
+		<!-- 指定连接数据库连接池的最小连接数 -->
+		<property name="minPoolSize" value="1"/>
+		<!-- 指定连接数据库连接池的初始化连接数 -->
+		<property name="initialPoolSize" value="1"/>
+		<!-- 指定连接数据库连接池的连接的最大空闲时间 -->
+		<property name="maxIdleTime" value="10"/>
+	</bean>
+
+	<!-- 定义Hibernate的SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"
+		p:dataSource-ref="dataSource"
+		p:mappingLocations="classpath*:com/aisino/finance/aisinopay/pojo/*.hbm.xml">
+		<property name="hibernateProperties">
+			<!-- 配置Hibernate属性 -->
+			<value>
+			hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
+			hibernate.hbm2ddl.auto=update
+			hibernate.show_sql=true
+			hibernate.format_sql=true;
+			</value>
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!--配置一个JdbcTemplate实例 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+
+	<!-- 配置事务管理 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<tx:annotation-driven transaction-manager="txManager" />
+	<aop:config>
+		<aop:pointcut expression="execution(public * com.sxt.service.impl.*.*(..))"
+			id="businessService" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="businessService" />
+	</aop:config>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="find*" read-only="true" propagation="NOT_SUPPORTED" />
+			<!-- get开头的方法不需要在事务中运行 。 有些情况是没有必要使用事务的，比如获取数据。开启事务本身对性能是有一定的影响的 -->
+			<tx:method name="*" />    <!-- 其他方法在实务中运行 -->
+		</tx:attributes>
+	</tx:advice>
+
+</beans>
