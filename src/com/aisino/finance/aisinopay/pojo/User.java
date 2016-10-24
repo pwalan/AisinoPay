@@ -22,6 +22,8 @@ public class User implements Serializable{
 	private int uid;
 	private String username;
 	private String passwd;
+	
+	private String confirmpasswd;  //再次输入密码
 		
 	public User() {
 	}
@@ -51,6 +53,15 @@ public class User implements Serializable{
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
+
+	public String getConfirmpasswd() {
+		return confirmpasswd;
+	}
+
+	public void setConfirmpasswd(String confirmpasswd) {
+		this.confirmpasswd = confirmpasswd;
+	}
+	
 	
 	
 }

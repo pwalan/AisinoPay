@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -45,5 +46,26 @@ public class UserContorller {
 		return mav;
 	}
 	
+	@RequestMapping("/toregister")
+	public ModelAndView toregister(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("register");
+		return mav;
+	}
+	
+	 @ModelAttribute("user")  
+	    public User getUser(){  
+	        User user=new User();  
+	        return user;  
+	    }  
+	
+	@RequestMapping("/register")
+	public ModelAndView register(User user,HttpServletRequest request, HttpServletResponse response){
+		ModelAndView mav=new ModelAndView();
+		
+		userDao.createUser(user);
+		
+		return mav;
+	}
 	
 }
