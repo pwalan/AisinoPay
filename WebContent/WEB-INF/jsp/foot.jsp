@@ -65,8 +65,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							相关链接
 						</a>
 						<br/>
-						<a>
-							相关链接
+						<a href="download.jsp">
+							相关链接22222
 						</a>
 						
 					
