@@ -31,8 +31,6 @@ public class UserContorller {
 		this.userDao = userDao;
 	}
 
-
-
 	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response){
 		ModelAndView mav=new ModelAndView();
@@ -46,4 +44,6 @@ public class UserContorller {
 		}
 		return mav;
 	}
+	
+	
 }

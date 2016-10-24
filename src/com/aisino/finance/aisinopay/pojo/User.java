@@ -16,16 +16,13 @@ import org.hibernate.annotations.GenericGenerator;
  * @author AlanP
  *
  */
-@Entity
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int uid;
 	private String username;
 	private String passwd;
-	
+		
 	public User() {
 	}
 	
