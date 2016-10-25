@@ -22,15 +22,21 @@ public class User implements Serializable{
 	private int uid;
 	private String username;
 	private String passwd;
+	private String phonenum;
+	private String nickname;
+	private String gender;
 	
 	private String confirmpasswd;  //再次输入密码
 		
 	public User() {
 	}
 	
-	public User(String username, String passwd) {
+	public User(String username, String passwd, String phonenum, String nickname, String gender) {
 		this.username = username;
 		this.passwd = passwd;
+		this.phonenum = phonenum;
+		this.nickname = nickname;
+		this.gender = gender;
 	}
 
 	public int getUid() {
@@ -60,6 +66,30 @@ public class User implements Serializable{
 
 	public void setConfirmpasswd(String confirmpasswd) {
 		this.confirmpasswd = confirmpasswd;
+	}
+
+	public String getPhonenum() {
+		return phonenum;
+	}
+
+	public void setPhonenum(String phonenum) {
+		this.phonenum = phonenum;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 	
 	

@@ -10,5 +10,8 @@
 		</id>
 		<property name="username" column="username" />
 		<property name="passwd" column="passwd" />
+		<property name="phonenum" column="phonenum" />
+		<property name="nickname" column="nickname" />
+		<property name="gender" column="gender" />
 	</class>
 </hibernate-mapping>
