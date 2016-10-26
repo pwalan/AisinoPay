@@ -35,7 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
    			<div class="row clearfix" style="text-align:center;">
-				<div class="col-md-4 column">
+				<div class="col-md-4 col-xs-4 column">
 					<h2>
 						航信金融
 					</h2>
@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</p>
 					
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 col-xs-4 column">
 					<h2>
 						相关链接
 					</h2>
@@ -71,7 +71,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						
 					
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 col-xs-4 column">
 					<img alt="140x140" src="photo/px1.png" style="margin:10px 10px"/><img alt="140x140" src="photo/px2.png" style="margin:10px 10px"/>
 					<div><p>航信商务微信服务号 &nbsp &nbsp航信商务微信服务号</p></div>
 				</div>

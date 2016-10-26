@@ -41,7 +41,7 @@
 </head>
 
 <body>
-	<div class="col-md-offset-10">
+	<div class="col-md-offset-10 col-xs-offset-10">
 		<a href="#">登录</a> <a href="#">注册</a>
 
 	</div>

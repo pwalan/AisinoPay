@@ -18,7 +18,7 @@
 <title>新用户注册</title>
 </head>
 <body>
-<label class="col-md-offset-2" style="color:grey;margin-top:20px">友情提示：<span style="color: red">*</span>表示必填。已是会员，<a href="#">点此登录</a></label>
+<label class="col-md-offset-2" style="color:grey;margin-top:20px">友情提示：<span style="color: red">*</span>表示必填。已是会员，<a href="${pageContext.request.contextPath}/home/index.do">点此登录</a></label>
 	<center>
 		<form:form
 			action="${pageContext.request.contextPath}/user/register.do"
