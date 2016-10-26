@@ -92,6 +92,7 @@ function removeDlg(id)
 	<div class="col-md-offset-10">
 		<a href="${pageContext.request.contextPath}/home/login.do">登录</a> <a href="#">注册</a>
 
+
 	</div>
 	<nav class="navbar navbar-default" role="navigation">
 	<div class="navbar-header">

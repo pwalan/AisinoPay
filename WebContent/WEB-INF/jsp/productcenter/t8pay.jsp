@@ -83,7 +83,7 @@
 
 	}
 	function t8_download_func() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=T8.pdf";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=T8.pdf";
 	}
 </script>
 
@@ -93,7 +93,7 @@
 			<div class="col-md-12 column">
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
-				<div class="col-md-3"
+				<div class="col-md-3 col-xs-3"
 					style="background-color: #faf8f3; height: 2700px; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">产品中心</div>
@@ -111,11 +111,12 @@
 					</div>
 				</div>
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column"
+				<div class="col-md-9 col-xs-9 column"
 					style="background-color: #faf8f3; height: 2700px; margin-top: -20px;">
 
 					<div style="margin-top: 10px;">
-						<img src="img/t8/t8.png" width="100%" height="291" style="margin-top:20px">
+						<img src="img/t8/t8.png" width="100%" height="291"
+							style="margin-top: 20px">
 					</div>
 					<!-- 文档下载/产品介绍模块 -->
 
@@ -156,11 +157,15 @@
 												</div> -->
 											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 135px;">
-												455K</div>
-											<div class="download_cmd" style="margin-top: 75px;">
-												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="t8_download_func()">
+											<!-- <div class="download_size" style="margin-top: 135px;">
+												455K</div> -->
+											<div class="" style="margin-top: 20px;">
+												<img alt="下载文档" align="right" src="img/t8/download.jpg"
+													onClick="t8_download_func()"
+													style="margin-top: 75px; margin-right: 20px"> <br />
+												<br />
+												<p align="right"
+													style="margin-top: 95px; margin-right: 25px">455K</p>
 											</div>
 											<div id="vline1" class="download_vline"
 												style="margin-top: 70px;">
@@ -208,21 +213,54 @@
 
 					<!-- 产品特色模块 -->
 					<div class="subDiv" style="height: 464px;">
-						<table class="subTable">
-							<tr>
-								<td>
-									<div id="featureSub" style="position: relative; height: 100%;">
-										<div class="title_airpay" style="margin-top: 10px;">
-											产品特色</div>
+						<div id="featureSub" style="position: relative; height: 100%;">
+							<div class="title_airpay" style="margin-top: 10px;">产品特色</div>
 
-										<div class="lineSelDiv">
-											<hr class="lineSel">
-										</div>
-										<!-- <div class="lineUnselDiv">
+							<div class="lineSelDiv">
+								<hr class="lineSel">
+							</div>
+							<!-- <div class="lineUnselDiv">
 												<hr class="lineUnsel">
 											</div> -->
 
-										<div class="imglist_left" style="margin-top: 75px;">
+							<!-- mine -->
+							<div class="col-md-12 col-xs-12" style="margin-top: 80px;">
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/1.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4">
+									集多种业务功能为一体，简化操作，简洁桌面,便于维护，降低成本</div>
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/6.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4">
+									Windows主流应用平台，可加载丰富的行业应用：电子货架、电子菜单、酒店管理、治安管理、广告促销、电子商务、会员管理、企业ERP</div>
+							</div>
+							<div class="col-md-12 col-xs-12" style="margin-top: 20px;">
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/2.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4">
+									可通过WiFi或3G/4G接入移动互联网，支持设备远程监控、软件自动更新，还可获取云端服务</div>
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/3.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4">多媒体高清业务展示和良好的用户体验</div>
+							</div>
+							<div class="col-md-12 col-xs-12" style="margin-top: 20px;">
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/4.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4">模块化设计，灵活的组合配置，满足不同行业用户需求</div>
+								<div class="col-md-2 col-xs-2">
+									<img src="img/t8/5.png" width="100%">
+								</div>
+								<div class="col-md-4 col-xs-4" style="max-height: 30px;">
+									配有"航e付"销售、收银、开票一体化集成软件，并集成有"掌中店"中小商户进销存管理系统，还提供相应接口开发套件，用于与用户MIS系统集成</div>
+							</div>
+							<!-- mine -->
+
+							<!-- <div class="imglist_left" style="margin-top: 75px;">
 											<img src="img/t8/1.png">
 										</div>
 										<div id="aaa" class="imglist_left" style="margin-top: 194px;">
@@ -262,14 +300,10 @@
 										<div class="contentlist_right"
 											style="margin-top: 320px; font-size: 15px;">
 											配有"航e付"销售、收银、开票一体化集成软件，并集成有"掌中店"中小商户进销存管理系统，还提供相应接口开发套件，用于与用户MIS系统集成
-										</div>
+										</div> -->
 
-									</div>
+						</div>
 
-								</td>
-							</tr>
-
-						</table>
 					</div>
 					<!-- end 产品特色模块 -->
 
@@ -293,7 +327,8 @@
 
 										<div id="configImg"
 											style="position: absolute; margin-top: -140px; margin-left: 40px;">
-											<img id="configImg" alt="" src="img/t8/productshow.jpg">
+											<img id="configImg" alt="" width="100%"
+												src="img/t8/productshow.jpg">
 										</div>
 
 									</div>
@@ -418,51 +453,37 @@
 					<!-- end 产品配置 -->
 					<!-- 典型应用 -->
 					<div id="application" class="subDiv" style="height: 434px;">
-						<table class="subTable">
-							<tr>
-								<td style="width: 100%; height: 434px;">
+						<div class="title_airpay" style="margin-top: 10px;">典型应用</div>
 
-									<div style="position: relative; height: 100%;">
-										<div class="title_airpay" style="margin-top: 10px;">
-											典型应用</div>
-
-										<div class="lineSelDiv">
-											<hr class="lineSel">
-										</div>
-										<!-- <div class="lineUnselDiv">
+						<div class="lineSelDiv">
+							<hr class="lineSel">
+						</div>
+						<!-- <div class="lineUnselDiv">
 												<hr class="lineUnsel">
 											</div> -->
-
-										<div
-											style="position: absolute;; margin-top: 70px; margin-left: 23px;">
-											<img id="app1Img" alt="" src="img/t8/app1.jpg">
-										</div>
-										<div
-											style="position: absolute;; margin-top: 70px; margin-left: 436px;">
-											<img id="app2Img" alt="" src="img/t8/app2.jpg">
-										</div>
-										<div
-											style="position: absolute;; margin-top: 244px; margin-left: 23px;">
-											<img id="app3Img" alt="" src="img/t8/app3.jpg">
-										</div>
-										<div
-											style="position: absolute;; margin-top: 244px; margin-left: 436px;">
-											<img id="app4Img" alt="" src="img/t8/app4.jpg">
-										</div>
-									</div>
-								</td>
-
-							</tr>
-						</table>
+						<div class="col-md-12 col-xs-12" style="margin-top: 80px">
+							<div class="col-md-6 col-xs-6">
+								<img id="app1Img" alt="" width="100%" src="img/t8/app1.jpg">
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<img id="app2Img" alt="" width="100%" src="img/t8/app2.jpg">
+							</div>
+						</div>
+						<div class="col-md-12" style="margin-top:20px">
+							<div class="col-md-6 col-xs-6">
+								<img id="app3Img" alt="" width="100%" src="img/t8/app3.jpg">
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<img id="app4Img" alt="" width="100%" src="img/t8/app4.jpg">
+							</div>
+						</div>
 					</div>
 					<!-- end 典型应用 -->
 
-
 				</div>
-				
-			</div>
-		</div>
+
 		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
+
 </body>
 </html>
