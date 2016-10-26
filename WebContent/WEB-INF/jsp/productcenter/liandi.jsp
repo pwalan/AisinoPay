@@ -108,11 +108,11 @@
 					</div>
 					
 				</div>
-				<jsp:include page="../foot.jsp"></jsp:include>
+			
 			</div>
 			
 		</div>
-		
+			<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
 </body>
 </html>

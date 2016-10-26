@@ -37,12 +37,60 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script
 	src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+	
+<script type="text/javascript">
+        function hoverShowDiv() {
+            document.getElementById("divHover").style.display = block;
 
+            document.getElementById("divHover").style.top = document.getElementById("smallimg").style.top + 10;
+            document.getElementById("divHover").style.left = document.getElementById("smallimg").style.left + 10;
+        }
+        function hoverHiddendiv() {
+                document.getElementById("divHover").style.display = none;
+            }
+
+
+
+
+
+function myScanFunc_weixin()
+{
+  var alertTop = document.documentElement.scrollTop + 100;//得到滚动位置，设置对话框顶部位置
+    var alertLeft = 1030;//设置对话框居中显示
+   
+    var obj = parent.document.createElement("div");//创建一个div标签，作为自定对话框的容器
+    obj.id = "myalertdiv_weixin";
+    parent.document.body.appendChild(obj);
+    obj.style.cssText = "background:white;position:absolute; left:"+alertLeft+"px; top:"+alertTop+"px; border:#999999 1px solid; width:200px; height:200px; z-index:1000;";//设定对话框容器的样式
+
+   var dv1,dv2,dv3,dv4;
+ 
+   dv4 = '<center><div><img src="photo/px1.png" width="193px" height="200px"/></div></center>';
+  
+   obj.innerHTML = dv4;
+}
+
+
+//去除弹层
+function removeDlg(id)
+{    
+    //移除扫描对话框
+   
+    if(top.document.getElementById(id))
+    {
+       top.document.body.removeChild(top.document.getElementById(id));
+    }
+   
+}
+
+</script>
 </head>
 
 <body>
 	<div class="col-md-offset-10">
-		<a href="#">登录</a> <a href="#">注册</a>
+		<a href="${pageContext.request.contextPath}/home/login.do">登录</a> <a href="#">注册</a>
 
 	</div>
 	<nav class="navbar navbar-default" role="navigation">
@@ -57,7 +105,7 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li class=""><a href="#">首页</a></li>
+			<li class=""><a href="${pageContext.request.contextPath}/home/index.do">首页</a></li>
 			<li class="dropdown_1"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown">产品中心<strong class="caret"></strong></a>
 				<ul class="dropdown-menu">
@@ -123,12 +171,23 @@
 					<li class="divider"></li>
 					<li><a href="#">专业化服务系统</a></li>
 				</ul></li>
-			<li style="margin: 5px 0px 5px 40px"><img src="photo/QQlogo.png"
-				width="100%"></li>
-			<li style="margin: 5px 0px"><img src="photo/wechatlogo.png"
-				width="100%"></li>
+				 
+					<li style="margin: 5px 0px 5px 40px">
+					
+					<img src="photo/QQlogo.png" width="100%" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')" >
+					
+					</a>
+					</li>
+				
+				<li style="margin: 5px 0px">
+				<img src="photo/wechatlogo.png"width="100%" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')">
+				</li>
+				
+				
 		</ul>
-
+				<div style="width:200px;height:80px;border:1px solide #aaccff;display:none;" id="divHover" >
+				<img src="photo/px1.png" width="100px" height="200px" id="bigimg" />
+				</div>
 	</div>
 	</nav>
 </body>

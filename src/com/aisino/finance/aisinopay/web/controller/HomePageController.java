@@ -91,5 +91,12 @@ public class HomePageController {
 		mav.setViewName("solution/pos");
 		return mav;
 	}
+	
+	@RequestMapping("/login")
+	public ModelAndView login(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("../../index");
+		return mav;
+	}
 
 }
