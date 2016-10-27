@@ -32,17 +32,34 @@ public class UserContorller {
 		this.userDao = userDao;
 	}
 
-	@RequestMapping("/login")
-	public ModelAndView login(HttpServletRequest request, HttpServletResponse response){
+	@ModelAttribute("user")  
+    public User getUser(){  
+        User user=new User();  
+        return user;  
+    }  
+	
+	@RequestMapping("/tologin")
+	public ModelAndView tologin(){
 		ModelAndView mav=new ModelAndView();
-		
-		String username=request.getParameter("username");
-		String passwd=request.getParameter("passwd");
-		System.out.println(username+"-"+passwd);
-		User user=userDao.findUserByUsername(username);
-		if(user!=null&&user.getPasswd().equals(passwd)){
-			System.out.println("success");
+		mav.setViewName("login");
+		return mav;
+	}
+	
+	@RequestMapping("/login")
+	public ModelAndView login(User user,HttpServletRequest request, HttpServletResponse response){
+		ModelAndView mav=new ModelAndView();
+		String status="fail";
+		System.out.println(user.getUid()+user.getUsername());
+		User tmpuser=userDao.findUserByUsername(user.getUsername());
+		if(tmpuser!=null&&user.getUsername()!=null&&!user.getUsername().isEmpty()&&tmpuser.getPasswd().equals(user.getPasswd())){
+			mav.setViewName("home");
+			status="success";
+		}else{
+			mav.setViewName("login");
+			status="fail";
+			System.out.println("fail");
 		}
+		mav.addObject("status",status);
 		return mav;
 	}
 	
@@ -52,12 +69,6 @@ public class UserContorller {
 		mav.setViewName("register");
 		return mav;
 	}
-	
-	 @ModelAttribute("user")  
-	    public User getUser(){  
-	        User user=new User();  
-	        return user;  
-	    }  
 	
 	@RequestMapping("/register")
 	public ModelAndView register(User user,HttpServletRequest request, HttpServletResponse response){
