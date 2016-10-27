@@ -102,26 +102,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active">
-								<img alt="" src="photo/t8.png" />
+								<img alt="" src="photo/car.png" />
 								<div class="carousel-caption">
-									<h4>
+									<!-- <h4>
 										产品中心
-									</h4>
+									</h4> -->
 									
 								</div>
 							</div>
 							<div class="item">
 								<img alt="" src="photo/car.png" />
 								<div class="carousel-caption">
-									<h4>
+									<!-- <h4>
 										解决方案
-									</h4>
+									</h4> -->
 								
 								</div>
 							</div>
 							
 						</div> <a class="left carousel-control" href="#carousel-390084" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-390084" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 					</div>
+					
 				</div>
 				
 				<div class="col-md-5  column func_box" >
@@ -133,8 +134,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<div class="row">
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption" style="margin-left:-10px">
 											
 										
 											<p>
@@ -145,8 +146,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -157,8 +158,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -169,8 +170,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -187,8 +188,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<div class="row">
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -199,8 +200,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -211,8 +212,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
@@ -223,8 +224,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<div class="col-md-3">
 									<div class="thumbnail" style="border:0px">
-										<img alt="300x200" src="v3/default4.jpg" />
-										<div class="caption">
+										<img alt="300x200" src="photo/hangxin.png" />
+										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>

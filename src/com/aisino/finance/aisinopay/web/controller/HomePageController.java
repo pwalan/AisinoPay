@@ -1,4 +1,4 @@
-package com.aisino.finance.aisinopay.web.controller;
+﻿package com.aisino.finance.aisinopay.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -91,7 +91,7 @@ public class HomePageController {
 		mav.setViewName("solution/pos");
 		return mav;
 	}
-	
+
 	/**
 	 * 新闻中心跳转控制
 	 * 

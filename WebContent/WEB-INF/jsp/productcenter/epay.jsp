@@ -67,7 +67,7 @@
 			<div class="col-md-12 column">
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
-				<div class="col-md-3"
+				<div class="col-md-3 col-xs-3"
 					style="background-color: #faf8f3; height: 1550px; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">产品中心</div>
@@ -86,7 +86,7 @@
 				</div>
 
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column"
+				<div class="col-md-9 col-xs-9 column"
 					style="background-color: #faf8f3; height: 1550px; margin-top: -20px;">
 					<ul id="myTab" class="nav nav-tabs" style="margin-top: 20px;">
 						<li class="active"><a href="#standard" data-toggle="tab">
@@ -113,9 +113,10 @@
 					</div>
 
 				</div>
-				<jsp:include page="../foot.jsp"></jsp:include>
+
 			</div>
 		</div>
+		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
 </body>
 </html>

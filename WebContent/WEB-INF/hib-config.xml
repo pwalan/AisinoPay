@@ -14,7 +14,6 @@ http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
    http://www.springframework.org/schema/context/spring-context-2.5.xsd
 ">
 	<context:component-scan base-package="com.aisino.finance.aisinopay" />
-	<!-- 支持aop注解 -->
 	<aop:aspectj-autoproxy />
 
 
@@ -22,21 +21,21 @@ http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<!-- 指定连接数据库的驱动 -->
-		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<!-- 指定连接数据库的URL -->
-		<property name="jdbcUrl" value="jdbc:mysql://pwalan.cn:3306/aisinopay"/>
+		<property name="jdbcUrl" value="jdbc:mysql://pwalan.cn:3306/aisinopay" />
 		<!-- 指定连接数据库的用户名 -->
-		<property name="user" value="root"/>
+		<property name="user" value="root" />
 		<!-- 指定连接数据库的密码 -->
-		<property name="password" value="pwalan"/>
+		<property name="password" value="pwalan" />
 		<!-- 指定连接数据库连接池的最大连接数 -->
-		<property name="maxPoolSize" value="20"/>
+		<property name="maxPoolSize" value="20" />
 		<!-- 指定连接数据库连接池的最小连接数 -->
-		<property name="minPoolSize" value="1"/>
+		<property name="minPoolSize" value="1" />
 		<!-- 指定连接数据库连接池的初始化连接数 -->
-		<property name="initialPoolSize" value="1"/>
+		<property name="initialPoolSize" value="1" />
 		<!-- 指定连接数据库连接池的连接的最大空闲时间 -->
-		<property name="maxIdleTime" value="10"/>
+		<property name="maxIdleTime" value="10" />
 	</bean>
 
 	<!-- 定义Hibernate的SessionFactory -->
@@ -47,10 +46,10 @@ http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
 		<property name="hibernateProperties">
 			<!-- 配置Hibernate属性 -->
 			<value>
-			hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
-			hibernate.hbm2ddl.auto=update
-			hibernate.show_sql=true
-			hibernate.format_sql=true;
+				hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
+				hibernate.hbm2ddl.auto=update
+				hibernate.show_sql=true
+				hibernate.format_sql=true;
 			</value>
 		</property>
 	</bean>
