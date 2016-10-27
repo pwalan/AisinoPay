@@ -91,5 +91,110 @@ public class HomePageController {
 		mav.setViewName("solution/pos");
 		return mav;
 	}
+	
+	/**
+	 * 新闻中心跳转控制
+	 * 
+	 */
+	@RequestMapping("/business")
+	public ModelAndView business(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/business");
+		return mav;
+	}
+	@RequestMapping("/industrial")
+	public ModelAndView industrial(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/industrial");
+		return mav;
+	}
+	@RequestMapping("/policy")
+	public ModelAndView policy(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/policy");
+		return mav;
+	}
+	@RequestMapping("/bus_1")
+	public ModelAndView bus_1(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/bus_1");
+		return mav;
+	}
+	@RequestMapping("/bus_2")
+	public ModelAndView bus_2(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/bus_2");
+		return mav;
+	}
+	@RequestMapping("/bus_3")
+	public ModelAndView bus_3(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/bus_3");
+		return mav;
+	}
+	@RequestMapping("/bus_4")
+	public ModelAndView bus_4(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/bus_4");
+		return mav;
+	}
+	@RequestMapping("/ind_1")
+	public ModelAndView ind_1(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/ind_1");
+		return mav;
+	}
+	@RequestMapping("/pol_1")
+	public ModelAndView pol_1(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/pol_1");
+		return mav;
+	}
+	@RequestMapping("/pol_2")
+	public ModelAndView pol_2(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("newscenter/pol_2");
+		return mav;
+	}
+	/**
+	 * 下载中心跳转控制
+	 * 
+	 */
+	@RequestMapping("/t8pays")
+	public ModelAndView t8pays(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/t8pays");
+		return mav;
+	}
+	@RequestMapping("/epays")
+	public ModelAndView epays(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/epays");
+		return mav;
+	}
+	@RequestMapping("/POSterminal")
+	public ModelAndView POSterminal(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/POSterminal");
+		return mav;
+	}
+	@RequestMapping("/POSjob")
+	public ModelAndView POSjob(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/POSjob");
+		return mav;
+	}
+	@RequestMapping("/TMSterminal")
+	public ModelAndView TMSterminal(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/TMSterminal");
+		return mav;
+	}
+	@RequestMapping("/service")
+	public ModelAndView service(){
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("downloadcenter/service");
+		return mav;
+	}
 
 }

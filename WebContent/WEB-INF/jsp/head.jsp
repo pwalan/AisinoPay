@@ -100,28 +100,28 @@
 			<li class="dropdown_3"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown">新闻中心<strong class="caret"></strong></a>
 				<ul class="dropdown-menu">
-					<li><a href="#">业务动态</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/business.do">业务动态</a></li>
 					<li class="divider"></li>
-					<li><a href="#">产业资讯</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/industrial.do">产业资讯</a></li>
 					<li class="divider"></li>
-					<li><a href="#">政策法规</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/policy.do">政策法规</a></li>
 
 
 				</ul></li>
 			<li class="dropdown_4"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown">下载中心<strong class="caret"></strong></a>
 				<ul class="dropdown-menu">
-					<li><a href="#">T8智能支付终端</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/t8pays.do">T8智能支付终端</a></li>
 					<li class="divider"></li>
-					<li><a href="#">航e付</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/epays.do">航e付</a></li>
 					<li class="divider"></li>
-					<li><a href="#">POS终端</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/POSterminal.do">POS终端</a></li>
 					<li class="divider"></li>
-					<li><a href="#">收单作业系统</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/POSjob.do">收单作业系统</a></li>
 					<li class="divider"></li>
-					<li><a href="#">终端管理系统</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/TMSterminal.do">终端管理系统</a></li>
 					<li class="divider"></li>
-					<li><a href="#">专业化服务系统</a></li>
+					<li><a href="${pageContext.request.contextPath}/home/service.do">专业化服务系统</a></li>
 				</ul></li>
 			<li style="margin: 5px 0px 5px 40px"><img src="photo/QQlogo.png"
 				width="100%"></li>
