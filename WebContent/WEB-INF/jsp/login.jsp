@@ -145,7 +145,7 @@ html, body {
 		<div class="login-box">
 			<div class="login-title text-center">
 				<h1>
-					<small>登录</small>
+					<small>欢迎登录航信支付</small>
 				</h1>
 			</div>
 			<div class="login-content">
@@ -168,7 +168,7 @@ html, body {
 								<div class="input-group">
 									<span class="input-group-addon"><span
 										class="glyphicon glyphicon-lock"></span></span>
-									<form:input type="text" id="password" path="passwd"
+									<form:input type="password" id="password" path="passwd"
 										class="form-control" placeholder="密码" />
 								</div>
 							</div>
@@ -177,7 +177,7 @@ html, body {
 							<div class="col-xs-4 col-xs-offset-4 ">
 								<button id="tosubmit" status="${requestScope.status}"
 									class="btn btn-sm btn-info">
-									<span class="glyphicon glyphicon-off"></span>登录
+									<span class="glyphicon glyphicon-off" style="margin-right:5px;"></span>登录
 								</button>
 							</div>
 						</div>

@@ -73,9 +73,16 @@ public class UserContorller {
 	@RequestMapping("/register")
 	public ModelAndView register(User user,HttpServletRequest request, HttpServletResponse response){
 		ModelAndView mav=new ModelAndView();
-		
-		userDao.createUser(user);
-		
+		User tmpuser=userDao.findUserByUsername(user.getUsername());
+		System.out.println(tmpuser.getUsername());
+		if(tmpuser!=null&&tmpuser.getUsername()==null){
+			userDao.createUser(user);
+			mav.setViewName("login");
+		}else{
+			mav.setViewName("register");
+			System.out.println("fail");
+		}
+		mav.addObject(user);
 		return mav;
 	}
 	
