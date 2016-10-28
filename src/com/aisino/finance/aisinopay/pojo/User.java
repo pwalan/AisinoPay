@@ -27,7 +27,8 @@ public class User implements Serializable{
 	private String gender;
 	
 	private String confirmpasswd;  //再次输入密码
-		
+	private String code;  //验证码	
+	
 	public User() {
 	}
 	
@@ -90,6 +91,14 @@ public class User implements Serializable{
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 	
 	

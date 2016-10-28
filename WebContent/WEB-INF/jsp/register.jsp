@@ -25,56 +25,83 @@
 <script
 	src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 <script>
-/* 	$.validator.setDefaults({
-		submitHandler : function() {
-			alert("提交事件!");
-		}
-	}); */
-	$(document).ready(function() {
-		// 在键盘按下并释放及提交后验证提交表单
-		$("#myForm").validate({
-			rules : {
-				username : {
-					required : true,
-					email : true
-				},
-				phonenum : {
-					required : true,
-					minlength : 8
-				},
-				nickname : {
-					required : true,
-				},
-				gender : {
-					required : true,
-				},
-				passwd : {
-					required : true,
-					minlength : 5
-				},
-				confirmpasswd : {
-					required : true,
-					minlength : 5,
-					equalTo : "#passwd"
-				},
-				agree : "required"
-			},
-			messages : {
-				username : "请输入一个正确的邮箱作为您的登录用户名",
-				passwd : {
-					required : "请输入密码",
-					minlength : "密码长度不能小于 5 个字母"
-				},
-				confirmpasswd : {
-					required : "请输入密码",
-					minlength : "密码长度不能小于 5 个字母",
-					equalTo : "两次密码输入不一致"
-				},
-				agree : "请同意用户协议"
-			}
-		});
+	/* 	$.validator.setDefaults({
+	 submitHandler : function() {
+	 alert("提交事件!");
+	 }
+	 }); */
+	$(document)
+			.ready(
+					function() {
+						// 在键盘按下并释放及提交后验证提交表单
+						$("#myForm")
+								.validate(
+										{
+											rules : {
+												username : {
+													required : true,
+													email : true
+												},
+												phonenum : {
+													required : true,
+													minlength : 8
+												},
+												nickname : {
+													required : true,
+												},
+												gender : {
+													required : true,
+												},
+												passwd : {
+													required : true,
+													minlength : 5
+												},
+												confirmpasswd : {
+													required : true,
+													minlength : 5,
+													equalTo : "#passwd"
+												},
+												code : {
+													required : true,
+												},
+												agree : "required"
+											},
+											messages : {
+												username : "请输入一个正确的邮箱作为您的登录用户名",
+												passwd : {
+													required : "请输入密码",
+													minlength : "密码长度不能小于 5 个字母"
+												},
+												confirmpasswd : {
+													required : "请输入密码",
+													minlength : "密码长度不能小于 5 个字母",
+													equalTo : "两次密码输入不一致"
+												},
+												agree : "请同意用户协议",
+												code : {
+													required : "请输入验证码",
+												}
+											}
+										});
+					});
 
-	});
+	function changeImg() {
+		var imgSrc = $("#imgObj");
+		var src = imgSrc.attr("src");
+		imgSrc.attr("src", chgUrl(src));
+	}
+	//时间戳   
+	//为了使每次生成图片不一致，即不让浏览器读缓存，所以需要加上时间戳   
+	function chgUrl(url) {
+		var timestamp = (new Date()).valueOf();
+		url = url.substring(0, 18); //截取当前url
+		if ((url.indexOf("&") >= 0)) {
+			url = url + "×tamp=" + timestamp;
+		} else {
+			url = url + "?timestamp=" + timestamp;
+		}
+		return url;
+	}
 </script>
 <style>
 .error {
@@ -92,7 +119,15 @@
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	width: 18%;
-	height:32px;
+	height: 32px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.code {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 10%;
+	height: 32px;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 </style>
@@ -138,15 +173,18 @@
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>国家</label> <input id="" name="" type="text" class="myinput">
+					style="color: red">*</span>国家</label> <input id="" name="" type="text"
+					class="myinput">
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>省份/直辖市</label> <input id="" name="" type="text" class="myinput">
+					style="color: red">*</span>省份/直辖市</label> <input id="" name="" type="text"
+					class="myinput">
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>城市/地区</label> <input id="" name="" type="text" class="myinput">
+					style="color: red">*</span>城市/地区</label> <input id="" name="" type="text"
+					class="myinput">
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1">区/县</label> <input
@@ -154,7 +192,10 @@
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1">验证码</label> <input
-					id="" name="" type="text" class="myinput">
+					id="code" name="code" type="text" class="code"> <img
+					id="imgObj" alt="验证码"
+					src="${pageContext.request.contextPath}/code.do" /> <a
+					onclick="changeImg()">换一张</a>
 			</p>
 			<center>
 				<p>
