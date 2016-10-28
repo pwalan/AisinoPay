@@ -469,7 +469,7 @@
 								<img id="app2Img" alt="" width="100%" src="img/t8/app2.jpg">
 							</div>
 						</div>
-						<div class="col-md-12" style="margin-top:20px">
+						<div class="col-md-12" style="margin-top: 20px">
 							<div class="col-md-6 col-xs-6">
 								<img id="app3Img" alt="" width="100%" src="img/t8/app3.jpg">
 							</div>
@@ -479,11 +479,10 @@
 						</div>
 					</div>
 					<!-- end 典型应用 -->
-
 				</div>
-
+			</div>
+		</div>
 		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
-
 </body>
 </html>
