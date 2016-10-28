@@ -43,9 +43,9 @@ html,body {
 	background-image:-moz-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
 	background-image:-webkit-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
 	background-image:-ms-linear-gradient(bottom, #6699FF 0%, #6699FF 100%); */
-	background:url("../photo/aisino.jpg");
-/* 	background-repeat:no-repeat;
-	background-size:100%; */
+	background:url("photo/aisino.jpg");
+ 	background-repeat:no-repeat;
+	background-size:100%; 
 	margin: 0 auto;
 	position: relative;
 	width: 100%;
@@ -147,7 +147,7 @@ html,body {
 				</div>
 				<div class="form-group form-actions">
 					<div class="col-xs-4 col-xs-offset-4 ">
-						<button type="submit" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-off"></span> <a href="${pageContext.request.contextPath}/home/index.do">登录</a></button>
+						<button type="submit" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-off"></span> <a href="${pageContext.request.contextPath}/home/main.do">登录</a></button>
 					</div>
 				</div>
 				<div class="form-group">
@@ -170,6 +170,45 @@ html,body {
 
 </div>
 
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" 
+						aria-hidden="true">×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					登录失败
+				</h4>
+			</div>
+			<div class="modal-body">
+				请输入正确的用户名和密码
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" 
+						data-dismiss="modal" >关闭
+				</button>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<!-- JS start -->
+<script type="text/javascript">
+	var fail= fuction(){
+		var overDiv = document.getElementById("myModal");
+	}
+
+
+</script>
+<!-- JS end -->
 </body>
 
 </html>
