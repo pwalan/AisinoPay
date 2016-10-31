@@ -40,7 +40,8 @@
 											rules : {
 												username : {
 													required : true,
-													email : true
+													email : true,
+													remote : "${pageContext.request.contextPath}/user/veryuname.do"
 												},
 												phonenum : {
 													required : true,
@@ -63,11 +64,15 @@
 												},
 												code : {
 													required : true,
+													remote : "${pageContext.request.contextPath}/user/verycode.do"
 												},
 												agree : "required"
 											},
 											messages : {
-												username : "请输入一个正确的邮箱作为您的登录用户名",
+												username : {
+													required : "请输入一个正确的邮箱作为您的登录用户名",
+													remote:"该邮箱已被注册"
+												},
 												passwd : {
 													required : "请输入密码",
 													minlength : "密码长度不能小于 5 个字母"
@@ -80,6 +85,7 @@
 												agree : "请同意用户协议",
 												code : {
 													required : "请输入验证码",
+													remote : "请输入正确的验证码"
 												}
 											}
 										});
