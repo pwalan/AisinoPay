@@ -166,7 +166,7 @@ body {
 
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/baifu/d210/d210.jpg" width="100%" height="391">
+		<img src="img/baifu/d210/d210.jpg" width="100%" height="100%">
 	</div>
 	<!-- 
    <div style="width:855px;height:60px;margin-top:20px;">
@@ -275,7 +275,7 @@ body {
 							<hr class="lineUnsel">
 						</div>
 						<div style="position: absolute; margin-top: 95px; width: 80%;">
-							<img id="featurebannnerImg" src="img/baifu/d210/pic.jpg">
+							<img id="featurebannnerImg" width="100%" src="img/baifu/d210/pic.jpg">
 						</div>
 
 						<div style="position: absolute; width: 100%; margin-top: 345px;">

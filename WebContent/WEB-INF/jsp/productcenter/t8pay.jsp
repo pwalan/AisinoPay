@@ -115,7 +115,7 @@
 					style="background-color: #faf8f3; height: 2700px; margin-top: -20px;">
 
 					<div style="margin-top: 10px;">
-						<img src="img/t8/t8.png" width="100%" height="291"
+						<img src="img/t8/t8.png" width="100%" height="100%"
 							style="margin-top: 20px">
 					</div>
 					<!-- 文档下载/产品介绍模块 -->
@@ -160,8 +160,8 @@
 											<!-- <div class="download_size" style="margin-top: 135px;">
 												455K</div> -->
 											<div class="" style="margin-top: 20px;">
-												<img alt="下载文档" align="right" src="img/t8/download.jpg"
-													onClick="t8_download_func()"
+												<img alt="下载文档" src="img/t8/download.jpg"
+													onClick="t8_download_func()" align="right"
 													style="margin-top: 75px; margin-right: 20px"> <br />
 												<br />
 												<p align="right"
@@ -452,7 +452,8 @@
 					</div>
 					<!-- end 产品配置 -->
 					<!-- 典型应用 -->
-					<div id="application" class="subDiv" style="height: 434px;">
+					<div id="application" class="subDiv col-md-12 col-xs-12"
+						style="padding-bottom: 20px">
 						<div class="title_airpay" style="margin-top: 10px;">典型应用</div>
 
 						<div class="lineSelDiv">
@@ -462,18 +463,19 @@
 												<hr class="lineUnsel">
 											</div> -->
 						<div class="col-md-12 col-xs-12" style="margin-top: 80px">
-							<div class="col-md-6 col-xs-6">
-								<img id="app1Img" alt="" width="100%" src="img/t8/app1.jpg">
+							<div class="col-md-6 col-xs-10">
+								<img id="app1Img" alt="" width="100%" height="100%"
+									src="img/t8/app1.jpg">
 							</div>
-							<div class="col-md-6 col-xs-6">
+							<div class="col-md-6 col-xs-10">
 								<img id="app2Img" alt="" width="100%" src="img/t8/app2.jpg">
 							</div>
 						</div>
 						<div class="col-md-12" style="margin-top: 20px">
-							<div class="col-md-6 col-xs-6">
+							<div class="col-md-6 col-xs-10">
 								<img id="app3Img" alt="" width="100%" src="img/t8/app3.jpg">
 							</div>
-							<div class="col-md-6 col-xs-6">
+							<div class="col-md-6 col-xs-10">
 								<img id="app4Img" alt="" width="100%" src="img/t8/app4.jpg">
 							</div>
 						</div>

@@ -126,7 +126,7 @@
 
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/baifu/s90/s90.jpg" width="100%" height="391">
+		<img src="img/baifu/s90/s90.jpg" width="100%" height="100%">
 	</div>
 	<!-- 文档下载模块 -->
 	<div class="subDiv" style="height: 218px;">
@@ -375,7 +375,7 @@
 		<table class="subTable">
 			<tr>
 				<td>
-					<div id="ruleSub" style="position: relative; height: 100%;">
+					<div id="ruleSub" style="position: relative; height: 80%;">
 						<div class="title_airpay" style="margin-top: 10px;">技术规格</div>
 
 						<div class="lineSelDiv">

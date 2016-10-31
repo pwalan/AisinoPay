@@ -156,7 +156,7 @@ window.onload = function()
 
 
    <div style="margin-top:10px;">
-   <img src="img/liandi/E530/e530.jpg" width="100%" height="391">
+   <img src="img/liandi/E530/e530.jpg" width="100%" height="100%">
    </div>
   <!-- 文档下载模块 -->
   <div id="subDiv_docProduct" class="subDiv" style="height:218px;">
@@ -242,7 +242,7 @@ window.onload = function()
 
             
                <div style="position:absolute;margin-top:75px;margin-left:-3px;">
-               	 <img id="featurebannnerImg"  src="img/liandi/E530/pos.png" width="820" style="margin-left:5px">
+               	 <img id="featurebannnerImg"  src="img/liandi/E530/pos.png" width="100%" style="margin-left:5px">
                </div>
                <div style="position:absolute;width:100%;margin-top:285px;">
                  <hr class="lineUnsel">

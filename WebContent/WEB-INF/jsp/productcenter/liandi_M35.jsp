@@ -146,7 +146,7 @@ window.onload = function()
 
 
      <div style="margin-top:10px;">
-   <img src="img/liandi/M35/m35.jpg" width="100%" height="391">
+   <img src="img/liandi/M35/m35.jpg" width="100%" height="100%">
    </div>
   <!-- 文档下载模块 -->
   <div class="subDiv" style="height:370px;" id="m35_doc_product">
@@ -255,7 +255,7 @@ window.onload = function()
                   <hr class="lineUnsel">
                </div>
                <div style="position:absolute;margin-top:75px;margin-left:-3px;">
-               	 <img id="featurebannnerImg"  src="img/liandi/M35/pos.png" width="820" style="margin-left:5px">
+               	 <img id="featurebannnerImg"  src="img/liandi/M35/pos.png" width="100%" style="margin-left:5px">
                </div>
 
                

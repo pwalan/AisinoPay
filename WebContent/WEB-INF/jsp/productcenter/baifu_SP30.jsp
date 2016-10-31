@@ -122,7 +122,7 @@
 
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/baifu/sp30/sp30.jpg" width="100%" height="391">
+		<img src="img/baifu/sp30/sp30.jpg" width="100%" height="100%">
 	</div>
 	<!-- 文档下载模块 -->
 	<div class="subDiv" style="height: 218px;">
