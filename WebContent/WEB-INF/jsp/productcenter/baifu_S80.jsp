@@ -227,11 +227,10 @@
 						<div class="lineUnselDiv">
 							<hr class="lineUnsel">
 						</div>
-						<div
-							style="position: absolute; margin-top: 95px; margin-left: 70px;">
-							<img id="featurebannnerImg" src="img/baifu/s80/pic.jpg">
-							<ul id="featureSubUl"
-								style="margin-top: -205px; margin-left: 310px;">
+						<div class="col-md-12 col-xs-12" style="margin-top:100px;">
+							<img id="featurebannnerImg" src="img/baifu/s80/pic.jpg"
+								class="col-md-5 col-xs-5">
+							<ul id="featureSubUl" style="" class="col-md-7 col-xs-7">
 								<li style="padding: 10px;">内存容量大，可以存储更多信息与数据</li>
 								<li style="padding: 10px;">ARM 11 高速处理器</li>
 								<li style="padding: 10px;">数字及功能按键嵌套耐磨，硬键帽，手感舒适。</li>

@@ -234,11 +234,9 @@
 						<div class="lineUnselDiv">
 							<hr class="lineUnsel">
 						</div>
-						<div
-							style="position: absolute; margin-top: 95px; margin-left: 70px;">
-							<img id="featurebannnerImg" src="img/baifu/s90/pic.jpg">
-							<ul id="featureSubUl"
-								style="margin-top: -220px; margin-left: 310px;">
+						<div class="col-md-12 col-xs-12" style="margin-top: 95px;">
+							<img id="featurebannnerImg" src="img/baifu/s90/pic.jpg" class="col-md-5 col-xs-5">
+							<ul id="featureSubUl" class="col-md-7 col-xs-7">
 								<li style="padding: 10px;">ARM 11 高速处理器，大容量内存</li>
 								<li style="padding: 10px;">内置非接功能-MasterCard PayPass,Visa
 									PayWave</li>
@@ -378,7 +376,7 @@
 		<table class="subTable">
 			<tr>
 				<td>
-					<div id="ruleSub" style="position: relative; height: 80%;">
+					<div id="ruleSub" style="position: relative; height: 100%;">
 						<div class="title_airpay" style="margin-top: 10px;">技术规格</div>
 
 						<div class="lineSelDiv">

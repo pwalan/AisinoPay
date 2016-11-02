@@ -227,11 +227,9 @@
 						<div class="lineUnselDiv">
 							<hr class="lineUnsel">
 						</div>
-						<div
-							style="position: absolute; margin-top: 95px; margin-left: 70px;">
-							<img id="featurebannnerImg" src="img/baifu/sp30/pic.jpg">
-							<ul id="featureSubUl"
-								style="margin-top: -230px; margin-left: 310px;">
+						<div style="margin-top: 95px;" class="col-md-12 col-xs-12">
+							<img id="featurebannnerImg" src="img/baifu/sp30/pic.jpg" class="col-md-5 col-xs-5">
+							<ul id="featureSubUl" class="col-md-7 col-xs-7">
 								<li style="padding: 10px;">通过PCI PTS 3.x认证</li>
 								<li style="padding: 10px;">大容量内存，方便装载多种应用程序</li>
 								<li style="padding: 10px;">支持磁条卡、接触式IC卡及非接读卡</li>
