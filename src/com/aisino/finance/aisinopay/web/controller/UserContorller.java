@@ -1,5 +1,11 @@
 package com.aisino.finance.aisinopay.web.controller;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,8 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.aisino.finance.aisinopay.dao.IRegionDao;
 import com.aisino.finance.aisinopay.dao.IUserDao;
+import com.aisino.finance.aisinopay.pojo.Region;
 import com.aisino.finance.aisinopay.pojo.User;
+import com.google.gson.Gson;
 
 /**
  * 用户登录注册跳转控制
@@ -33,6 +42,17 @@ public class UserContorller {
 
 	public void setUserDao(IUserDao userDao) {
 		this.userDao = userDao;
+	}
+	
+	@Resource
+	private IRegionDao regionDao;
+	
+	public IRegionDao getRegionDao() {
+		return regionDao;
+	}
+
+	public void setRegionDao(IRegionDao regionDao) {
+		this.regionDao = regionDao;
 	}
 
 	@ModelAttribute("user")
@@ -110,6 +130,34 @@ public class UserContorller {
 			return "true";
 		}
 		return "false";
+	}
+	
+	@SuppressWarnings("rawtypes")
+	@RequestMapping("/getregion")
+	public void getregion(HttpServletRequest request, HttpServletResponse response) {
+		String parentId = request.getParameter("parentId");
+		if (parentId == null || parentId == "") {
+			parentId = "0";
+		}
+		List<Region> rlist=regionDao.findRegionByParentId(Double.valueOf(parentId));
+		String json = "";
+		ArrayList rsList = new ArrayList();
+		Map map = null;
+		for(Region r:rlist){
+			map = new HashMap();
+			map.put("id", r.getRegionId());
+			map.put("name", r.getRegionName());
+			rsList.add(map);
+		}
+		Gson gson = new Gson();
+		json = gson.toJson(rsList);
+		System.out.println(json);
+		response.setCharacterEncoding("UTF-8");
+		try {
+			response.getWriter().print(json);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

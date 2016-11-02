@@ -24,12 +24,59 @@
 	src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
 <script
 	src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script type="text/javascript" src="../js/json-minified.js"></script>
 <script>
 	/* 	$.validator.setDefaults({
 	 submitHandler : function() {
 	 alert("提交事件!");
 	 }
 	 }); */
+	//选择国家时触发
+	function onCountrychange(obj) {
+		var country = obj.value;
+		if (country == "China") {
+			setSelect('1', 'province');
+		}
+	}
+
+	//选择省市县时触发
+	function onSelectChange(obj, toSelId) {
+		setSelect(obj.value, toSelId);
+	}
+
+	function setSelect(fromSelVal, toSelId) {
+		//alert(document.getElementById("province").selectedIndex);
+		document.getElementById(toSelId).innerHTML = "";
+		jQuery.ajax({
+			url : "${pageContext.request.contextPath}/user/getregion.do",
+			cache : false,
+			data : "parentId=" + fromSelVal,
+			success : function(data) {
+				createSelectObj(data, toSelId);
+			}
+		});
+	}
+
+	function createSelectObj(data, toSelId) {
+		var arr = jsonParse(data);
+		if (arr != null && arr.length > 0) {
+			var obj = document.getElementById(toSelId);
+			obj.innerHTML = "";
+			var nullOp = document.createElement("option");
+			nullOp.setAttribute("value", "");
+			nullOp.appendChild(document.createTextNode("请选择"));
+			obj.appendChild(nullOp);
+			for ( var o in arr) {
+				var op = document.createElement("option");
+				op.setAttribute("value", arr[o].id);
+				//op.text=arr[o].name;//这一句在ie下不起作用，用下面这一句或者innerHTML
+				op.appendChild(document.createTextNode(arr[o].name));
+				obj.appendChild(op);
+			}
+
+		}
+	}
+
 	$(document)
 			.ready(
 					function() {
@@ -62,6 +109,9 @@
 													minlength : 5,
 													equalTo : "#passwd"
 												},
+												country : "required",
+												province : "required",
+												city : "required",
 												code : {
 													required : true,
 													remote : "${pageContext.request.contextPath}/user/verycode.do"
@@ -71,7 +121,7 @@
 											messages : {
 												username : {
 													required : "请输入一个正确的邮箱作为您的登录用户名",
-													remote:"该邮箱已被注册"
+													remote : "该邮箱已被注册"
 												},
 												passwd : {
 													required : "请输入密码",
@@ -142,7 +192,7 @@
 	<label class="col-md-offset-2 col-xs-offset-2"
 		style="color: grey; margin-top: 20px">友情提示：<span
 		style="color: red">*</span>表示必填。已是会员，<a
-		href="${pageContext.request.contextPath}/home/index.do">点此登录</a></label>
+		href="${pageContext.request.contextPath}/user/tologin.do">点此登录</a></label>
 	<form class="cmxform" id="myForm" method="post"
 		action="${pageContext.request.contextPath}/user/register.do">
 		<fieldset>
@@ -179,22 +229,26 @@
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>国家</label> <input id="" name="" type="text"
-					class="myinput">
+					style="color: red">*</span>国家</label> <select id="country" name="country"
+					class="myinput" onchange="onCountrychange(this)"><option
+						value="">请选择</option>
+					<option value="China">中国</option></select>
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>省份/直辖市</label> <input id="" name="" type="text"
-					class="myinput">
+					style="color: red">*</span>省份/直辖市</label> <select id="province"
+					name="province" class="myinput"
+					onchange="onSelectChange(this,'city');"><option value="">请选择</option></select>
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1"><span
-					style="color: red">*</span>城市/地区</label> <input id="" name="" type="text"
-					class="myinput">
+					style="color: red">*</span>城市/地区</label> <select id="city" name="city"
+					class="myinput" onchange="onSelectChange(this,'district');"><option
+						value="">请选择</option></select>
 			</p>
 			<p>
-				<label for="" class="col-md-offset-4 col-md-1">区/县</label> <input
-					id="" name="" type="text" class="myinput">
+				<label for="" class="col-md-offset-4 col-md-1">区/县</label> <select id="district"
+					name="district" class="myinput"><option value="">请选择</option></select>
 			</p>
 			<p>
 				<label for="" class="col-md-offset-4 col-md-1">验证码</label> <input

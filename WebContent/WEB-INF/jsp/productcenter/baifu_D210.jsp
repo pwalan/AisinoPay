@@ -27,7 +27,7 @@ body {
 		document.getElementById('font_productShow_D210').style.color = 'grey';
 	}
 	function d210_download_func() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=D210_CHN.pdf";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=D210_CHN.pdf";
 	}
 
 	window.onload = function() {
@@ -211,11 +211,14 @@ body {
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-03-16 13:15</div>
-							<div class="download_size" style="margin-top: 135px;">
-								944K</div>
-							<div class="download_cmd" style="margin-top: 75px;">
-								<img alt="下载文档" style="cursor: pointer;"
-									src="img/t8/download.jpg" onClick="d210_download_func()">
+							<!-- <div class="download_size" style="margin-top: 135px;">
+								944K</div> -->
+							<div class="" style="">
+								<img alt="下载文档" src="img/t8/download.jpg"
+									onClick="d210_download_func()" align="right"
+									style="cursor: pointer; margin-top: 75px; margin-right: 20px">
+								<br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">944K</p>
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -275,7 +278,8 @@ body {
 							<hr class="lineUnsel">
 						</div>
 						<div style="position: absolute; margin-top: 95px; width: 80%;">
-							<img id="featurebannnerImg" width="100%" src="img/baifu/d210/pic.jpg">
+							<img id="featurebannnerImg" width="100%"
+								src="img/baifu/d210/pic.jpg">
 						</div>
 
 						<div style="position: absolute; width: 100%; margin-top: 345px;">

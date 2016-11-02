@@ -21,7 +21,7 @@
 		document.getElementById('font_productShow_SP30').style.color = 'grey';
 	}
 	function sp30_download_func() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=SP30_CHN_new.pdf";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=SP30_CHN_new.pdf";
 	}
 	window.onload = function() {
 
@@ -161,11 +161,14 @@
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-03-16 13:15</div>
-							<div class="download_size" style="margin-top: 135px;">849K
-							</div>
-							<div class="download_cmd" style="margin-top: 75px;">
+							<!-- <div class="download_size" style="margin-top: 135px;">849K
+							</div> -->
+							<div class="" style="">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="sp30_download_func()">
+									onClick="sp30_download_func()"
+									style="cursor: pointer; margin-top: 75px; margin-right: 20px"
+									align="right"><br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">849K</p>
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
