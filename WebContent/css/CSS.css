@@ -74,7 +74,7 @@ height:51px;
 .imglist_right{position:absolute;margin-left:430px;}
 .contentlist_left{position:absolute;margin-left:151px;width:260px;:word-break:break-all;overflow:hidden;font-size:15px;}
 .contentlist_right{position:absolute;margin-left:562px;width:260px;:word-break:break-all;overflow:hidden;font-size:15px;}
-.contentlist_title{font-size:17px;font-family:微软雅黑;color:#fe9f69;margin-top:15px;}  
+.contentlist_title{font-size:17px;font-family:微软雅黑;color:#fe9f69;}  
 .contentlist_desc{font-size:15px;font-family:微软雅黑;margin-top:8px;}
 /* 联迪、百富四个分页面的导航 */
 .posProductNavDiv{width:100%;margin-top:20px;height:42px;background-color:#ffb822;}
