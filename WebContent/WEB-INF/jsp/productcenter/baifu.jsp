@@ -65,7 +65,7 @@
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
 				<div class="col-md-3 col-xs-3"
-					style="background-color: #faf8f3; height: 2550px; margin: -20px 0 0 0;">
+					style="background-color: #faf8f3; height: 2450px; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">产品中心</div>
 						<div class="leftTitle2" id="leftTitle2_solution">Product
@@ -83,7 +83,7 @@
 				</div>
 				<!-- 右侧具体内容 -->
 				<div class="col-md-9 col-xs-9 column"
-					style="background-color: #faf8f3; height: 2550px; margin-top: -20px;">
+					style="background-color: #faf8f3; height: 2450px; margin-top: -20px;">
 					<ul id="myTab" class="nav nav-tabs" style="margin-top: 20px;">
 						<li class="active"><a href="#D210" data-toggle="tab">D210无线POS</a></li>
 						<li><a href="#S80" data-toggle="tab">S80台式热敏POS</a></li>

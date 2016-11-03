@@ -33,16 +33,16 @@
 		document.getElementById('font_productShow_E_p').style.color = 'grey';
 	}
 	function e_download_func_p() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_Card.doc";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_Card.doc";
 	}
 	//
 	function soft_download_func_p() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_card.exe";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=Aisino_E-pay_card.exe";
 	}
 </script>
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/epay/precard.png" width="100%" height="291">
+		<img src="img/epay/precard.png" width="100%" height="100%">
 	</div>
 
 	<!-- 文档下载模块 -->
@@ -83,11 +83,13 @@
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-10-17 18:21</div>
-							<div class="download_size" style="margin-top: 135px;">
-								18406K</div>
-							<div class="download_cmd" style="margin-top: 75px;">
+							<!-- <div class="download_size" style="margin-top: 135px;">
+								18406K</div> -->
+							<div class="" style="">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="soft_download_func_p()">
+									onClick="soft_download_func_p()" align="right"
+									style="margin-top: 75px; margin-right: 20px"><br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">18406K</p>
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -121,11 +123,13 @@
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-10-17 18:21</div>
-							<div class="download_size" style="margin-top: 135px;">
-								2820K</div>
-							<div class="download_cmd" style="margin-top: 75px;">
+							<!-- <div class="download_size" style="margin-top: 135px;">
+								2820K</div> -->
+							<div class="" style="">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="e_download_func_p()">
+									onClick="e_download_func_p()" align="right"
+									style="margin-top: 75px; margin-right: 20px"><br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">2820K</p>
 							</div>
 							<div id="vline2" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -181,57 +185,47 @@
 						<div class="lineUnselDiv">
 							<hr class="lineUnsel">
 						</div>
-						<div class="imglist_left" style="margin-top: 70px;">
-							<img src="img/epay/1.png">
+						<div class="col-md-12 col-xs-12" style="margin-top: 80px;">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/1.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">销售、收银、开票、门店管理一体化集成软件</div>
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/8.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">集成常用的银行卡交易功能</div>
 						</div>
-						<div class="imglist_left" style="margin-top: 195px;">
-							<img src="img/epay/2.png">
+						<div class="col-md-12 col-xs-12" style="margin-top: 20px;">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/2.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">顾客信息自动维护、自动填充，模糊识别</div>
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/3.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">集成常用的发票管理功能</div>
 						</div>
-						<div class="imglist_left" style="margin-top: 318px;">
-							<img src="img/epay/4.png">
+						<div class="col-md-12 col-xs-12" style="margin-top: 20px;">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/4.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">通过网络自动升级更新，免维护</div>
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/5.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4" style="max-height: 30px;">
+								集成“掌中店”中小商户进销存管理系统</div>
 						</div>
-						<div class="imglist_left" style="margin-top: 445px;">
-							<img src="img/epay/6.png">
-						</div>
-
-						<div class="contentlist_left" style="margin-top: 70px;">
-							<div style="font-size: 15px; margin-top: 8px;">销售、收银、开票、门店管理一体化集成软件</div>
-						</div>
-						<div class="contentlist_left" style="margin-top: 195px;">
-							<div style="font-size: 15px; margin-top: 8px;">顾客信息自动维护、自动填充，模糊识别</div>
-						</div>
-						<div class="contentlist_left" style="margin-top: 318px;">
-							<div style="font-size: 15px; margin-top: 8px;">通过网络自动升级更新，免维护</div>
-						</div>
-						<div class="contentlist_left" style="margin-top: 445px;">
-							<div style="font-size: 15px; margin-top: 8px;">软件互联、信息互通、数据共享、操作一体</div>
-						</div>
-
-						<div class="imglist_right" style="margin-top: 70px;">
-							<img src="img/epay/8.png">
-						</div>
-						<div class="imglist_right" style="margin-top: 195px;">
-							<img src="img/epay/3.png">
-						</div>
-						<div class="imglist_right" style="margin-top: 318px;">
-							<img src="img/epay/5.png">
-						</div>
-						<div class="imglist_right" style="margin-top: 445px;">
-							<img src="img/epay/7.png">
-						</div>
-
-
-						<div class="contentlist_right" style="margin-top: 70px;">
-							<div style="font-size: 15px; margin-top: 8px;">集成常用的银行卡交易功能</div>
-						</div>
-						<div class="contentlist_right" style="margin-top: 195px;">
-							<div style="font-size: 15px; margin-top: 8px;">集成常用的发票管理功能</div>
-						</div>
-						<div class="contentlist_right" style="margin-top: 318px;">
-							<div style="font-size: 15px; margin-top: 8px;">集成“掌中店”中小商户进销存管理系统</div>
-						</div>
-						<div class="contentlist_right" style="margin-top: 445px;">
-							<div style="font-size: 15px; margin-top: 8px;">提供支付/开票接口开发套件，用于与商户MIS系统集成</div>
+						<div class="col-md-12 col-xs-12" style="margin-top: 20px;">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/6.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">软件互联、信息互通、数据共享、操作一体</div>
+							<div class="col-md-2 col-xs-2">
+								<img src="img/epay/7.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4" style="max-height: 30px;">
+								提供支付/开票接口开发套件，用于与商户MIS系统集成</div>
 						</div>
 
 					</div>

@@ -86,7 +86,7 @@
 			<div class="col-md-12 column">
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
-				<div class="col-md-3"
+				<div class="col-md-3 col-xs-3"
 					style="background-color: #faf8f3; height: 800px; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">下载中心</div>
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column"
+				<div class="col-md-9  column col-xs-9"
 					style="background-color: #faf8f3; height: 800px; margin-top: -20px;">
 					<br> <br>
 					<div style="font-size:15px;">
@@ -377,9 +377,10 @@
 					<!-- end  文档下载/产品介绍模块-->
 
 				</div>
-				<jsp:include page="../foot.jsp"></jsp:include>
+				
 			</div>
 		</div>
+		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
 </body>
 </html>

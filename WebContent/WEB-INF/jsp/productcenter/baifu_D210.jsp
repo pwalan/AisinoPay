@@ -27,7 +27,7 @@ body {
 		document.getElementById('font_productShow_D210').style.color = 'grey';
 	}
 	function d210_download_func() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=D210_CHN.pdf";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=D210_CHN.pdf";
 	}
 
 	window.onload = function() {
@@ -166,7 +166,7 @@ body {
 
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/baifu/d210/d210.jpg" width="100%" height="391">
+		<img src="img/baifu/d210/d210.jpg" width="100%" height="100%">
 	</div>
 	<!-- 
    <div style="width:855px;height:60px;margin-top:20px;">
@@ -211,11 +211,14 @@ body {
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-03-16 13:15</div>
-							<div class="download_size" style="margin-top: 135px;">
-								944K</div>
-							<div class="download_cmd" style="margin-top: 75px;">
-								<img alt="下载文档" style="cursor: pointer;"
-									src="img/t8/download.jpg" onClick="d210_download_func()">
+							<!-- <div class="download_size" style="margin-top: 135px;">
+								944K</div> -->
+							<div class="" style="">
+								<img alt="下载文档" src="img/t8/download.jpg"
+									onClick="d210_download_func()" align="right"
+									style="cursor: pointer; margin-top: 75px; margin-right: 20px">
+								<br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">944K</p>
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -261,7 +264,7 @@ body {
 	</div>
 	<!-- end  文档下载/产品介绍模块-->
 	<!-- 性能特点模块 -->
-	<div class="subDiv" style="height: 680px;">
+	<div class="subDiv">
 		<table class="subTable">
 			<tr>
 				<td>
@@ -275,14 +278,63 @@ body {
 							<hr class="lineUnsel">
 						</div>
 						<div style="position: absolute; margin-top: 95px; width: 80%;">
-							<img id="featurebannnerImg" src="img/baifu/d210/pic.jpg">
+							<img id="featurebannnerImg" width="100%"
+								src="img/baifu/d210/pic.jpg">
 						</div>
 
-						<div style="position: absolute; width: 100%; margin-top: 345px;">
+						<div style="position: absolute; width: 100%; margin-top: 300px;">
 							<hr class="lineUnsel">
 						</div>
 
-						<div class="imglist_left" style="margin-top: 390px;">
+						<div class="col-md-12 col-xs-12" style="margin-top: 360px;">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/baifu/d210/1.jpg" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<div style="font-size: 15px;">
+									<b style="color: orange;">高效、稳定的性能</b><br>
+									<ul style="font-size: 12px; margin-left: -22px;">
+										<li>专注于卡受理功能（磁卡、接触式IC卡等）</li>
+										<li>时尚小巧的设计，方便携带</li>
+										<li>2.4英寸彩屏加上专业的UI设计，提供良好的用户交互，带来完美支付体验</li>
+										<li>非接读卡器支持NFC功能</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-2">
+								<img src="img/baifu/d210/2.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<div style="font-size: 15px;">
+									<b style="color: orange;">良好的扩展性，满足您不同的需求</b><br>
+									<ul style="font-size: 12px; margin-left: -22px;">
+										<li>搭载基于开放式操作系统的智能设备应用</li>
+										<li>大容量存储满足支付核心应用的需求</li>
+										<li>USB接口可以实现高速数据传输</li>
+										<li>WiFi/BlueTooth/GPRS无线通讯方式</li>
+									</ul>
+								</div>
+								P
+							</div>
+						</div>
+						<div class="col-md-12 col-xs-12" style="margin-top: 20px; margin-bottom:20px">
+							<div class="col-md-2 col-xs-2">
+								<img src="img/baifu/d210/3.png" width="100%">
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<div style="font-size: 15px;">
+									<b style="color: orange;">高安全保障</b><br>
+									<ul style="font-size: 12px; margin-left: -22px;">
+										<li>符合PCI PTS 3.x 安全规范</li>
+										<li>有效保护持卡人及商户的敏感数据</li>
+										<li>支持加密算法，密钥安全存储</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- <div class="imglist_left" style="margin-top: 390px;">
 							<img src="img/baifu/d210/1.jpg">
 						</div>
 						<div class="imglist_left" style="margin-top: 540px;">
@@ -327,7 +379,7 @@ body {
 									<li>WiFi/BlueTooth/GPRS无线通讯方式</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</td>

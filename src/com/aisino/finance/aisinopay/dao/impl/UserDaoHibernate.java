@@ -1,15 +1,11 @@
 package com.aisino.finance.aisinopay.dao.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate3.HibernateTemplate;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import com.aisino.finance.aisinopay.dao.IUserDao;
 import com.aisino.finance.aisinopay.pojo.User;

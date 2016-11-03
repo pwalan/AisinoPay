@@ -21,7 +21,7 @@
 		document.getElementById('font_productShow_S90').style.color = 'grey';
 	}
 	function s90_download_func() {
-		window.location.href ="${pageContext.request.contextPath}/file/download.do?filename=S90_CHN_new.pdf";
+		window.location.href = "${pageContext.request.contextPath}/file/download.do?filename=S90_CHN_new.pdf";
 	}
 	window.onload = function() {
 		if (isFireFox()) {
@@ -126,7 +126,7 @@
 
 <body>
 	<div style="margin-top: 10px;">
-		<img src="img/baifu/s90/s90.jpg" width="100%" height="391">
+		<img src="img/baifu/s90/s90.jpg" width="100%" height="100%">
 	</div>
 	<!-- 文档下载模块 -->
 	<div class="subDiv" style="height: 218px;">
@@ -165,11 +165,14 @@
 							</div>
 							<div class="download_time" style="margin-top: 130px;">
 								上传时间：2015-03-16 13:15</div>
-							<div class="download_size" style="margin-top: 135px">1000K
-							</div>
-							<div class="download_cmd" style="margin-top: 75px;">
+							<!-- <div class="download_size" style="margin-top: 135px">1000K
+							</div> -->
+							<div class="">
 								<img alt="下载文档" src="img/t8/download.jpg"
-									onClick="s90_download_func()">
+									onClick="s90_download_func()"
+									style="cursor: pointer; margin-top: 75px; margin-right: 20px"
+									align="right"><br /> <br />
+								<p align="right" style="margin-top: 95px; margin-right: 25px">939K</p>
 							</div>
 							<div id="vline1" class="download_vline" style="margin-top: 70px;">
 								<hr size="40" class="download_vline_inner">
@@ -231,11 +234,9 @@
 						<div class="lineUnselDiv">
 							<hr class="lineUnsel">
 						</div>
-						<div
-							style="position: absolute; margin-top: 95px; margin-left: 70px;">
-							<img id="featurebannnerImg" src="img/baifu/s90/pic.jpg">
-							<ul id="featureSubUl"
-								style="margin-top: -220px; margin-left: 310px;">
+						<div class="col-md-12 col-xs-12" style="margin-top: 95px;">
+							<img id="featurebannnerImg" src="img/baifu/s90/pic.jpg" class="col-md-5 col-xs-5">
+							<ul id="featureSubUl" class="col-md-7 col-xs-7">
 								<li style="padding: 10px;">ARM 11 高速处理器，大容量内存</li>
 								<li style="padding: 10px;">内置非接功能-MasterCard PayPass,Visa
 									PayWave</li>
