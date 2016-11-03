@@ -175,13 +175,13 @@ function removeDlg(id)
 				 
 					<li style="margin: 5px 0px 5px 40px">
 					
-					<img src="photo/QQlogo.png" width="100%" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')" >
+					<img  src="photo/QQlogo.png" width="35px" height="35px" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')" style="display:block" >
 					
-					</a>
+					
 					</li>
 				
 				<li style="margin: 5px 0px">
-				<img src="photo/wechatlogo.png"width="100%" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')">
+				<img  src="photo/wechatlogo.png" width="35px" height="35px" id="smallimg" onmouseover="myScanFunc_weixin()" onmouseout="removeDlg('myalertdiv_weixin')" style="display:block">
 				</li>
 				
 				

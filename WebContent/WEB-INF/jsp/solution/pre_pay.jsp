@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:1900px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:1900px; margin-top:-20px;">
 			  
 			  
 		<div class="totalDiv" style="width:80%">
@@ -81,7 +81,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着大中型商场、超市等零售企业以及酒店和娱乐业商户对预付会员卡模式的推崇，越来越多的收单银行和收单机构开始关注预付卡。为商户提供预付卡系统，并通过在银行POS终端上受理，牢牢绑定与商户的业务联系。
         </div>
            <div class="sol_img">
-        <img alt="" src="img/solution/precard1.png">
+        <img alt="" src="img/solution/precard1.png" width="100%">
         </div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
@@ -99,7 +99,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;捷文科技的预付卡系统，已在众多企业得以广泛应用，为企业提供单用途卡和多用途卡的系统支持，提供包括制卡、卡片库存管理、卡片销售管理、卡片激活、卡片受理、资金清算等。             
         </div>
         <div class="sol_img">
-        <img id="img_precard2" alt="" src="img/solution/precard2.png">
+        <img id="img_precard2" alt="" src="img/solution/precard2.png" width="100%">
         </div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
@@ -142,7 +142,8 @@
            <span>北京首采联合自发卡系统</span>
            <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
            <span>红树林酒店度假卡系统</span>
-           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
+           <br/>
+           <span style="color:blue;">■</span>
            <span>金典投资集团多商户预付卡系统</span>
            </div>
   </div> <!-- end 案例模块 -->

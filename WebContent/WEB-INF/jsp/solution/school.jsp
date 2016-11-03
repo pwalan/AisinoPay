@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:2000px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:2000px; margin-top:-20px;">
 			 
 			 
 			 <div class="totalDiv" style="width:80%">
@@ -81,7 +81,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着数字化校园建设进程的加快，我国部分校园已普遍开始推广校园一卡通项目，由于各学校在观念、资源、技术等各方面的差异，造成虽然已经推广IC卡应用，但缺乏科学、统一的管理，校内各种服务窗口各自为阵，在增加发卡成本及管理成本的同时，校方也无法全面掌握校内消费支出情况，无法实现科学规范的统一管理。随着经济发展，越来越多的消费、服务行业均已渗透到高效，过去的一个窗口一个卡的管理模式已不能满足学校的管理需要和学生的用卡需求。通过实施校园一卡通，可有效地满足学校管理层、教师、学生、后勤等多方面的个性化需求，全面提升学校数字化管理水平。
         </div>
           <div class="sol_img">
-        <img alt="" src="img/solution/school1.png">
+        <img alt="" src="img/solution/school1.png" width="100%">
         </div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
@@ -100,7 +100,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用IC卡作为信息存储交互、交易、支付、身份识别的介质，设计采用多级管理运营方式和三层应用结构的系统框架，系统由一个中心平台、多个应用网点以及多个应用系统构成。采用多级管理运营方式。从功能上，一卡通平台下，具备消费系统(包括食堂消费和便利店超时消费)、门禁系统、考勤系统、方可系统、会议签到系统、通勤车系统、停车场管理系统等。       
         </div>
         <div class="sol_img">
-        <img id="img_school" alt="" src="img/solution/school2.png">
+        <img id="img_school" alt="" src="img/solution/school2.png" width="100%">
         </div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
@@ -134,9 +134,10 @@
           <div class="sol_content">
            <span style="color:blue;">■</span>
            <span>上海工行华东师范大学校园卡</span>
-           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
+           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
            <span>上海工行海事大学校园卡</span>
-           <span style="color:blue;" id="case_list3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
+           <br/>
+           <span style="color:blue;" id="case_list3">■</span>
            <span>上海工行松江大学城校园卡等十余所高校</span>
           
            </div>

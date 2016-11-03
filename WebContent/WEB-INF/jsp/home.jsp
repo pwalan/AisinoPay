@@ -61,7 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</ol>
 				<div class="carousel-inner">
 					<div class="item">
-						<img alt="" src="photo/bigbanner.png" />
+						<img alt="" src="photo/bigbanner.png" width="100%"/>
 						<div class="carousel-caption">
 							<h4>
 								First Thumbnail label
@@ -72,13 +72,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 					</div>
 					<div class="item active">
-						<img alt="" src="photo/bigbanner2.png" />
+						<img alt="" src="photo/bigbanner2.png" width="100%"/>
 						<div class="carousel-caption">
 							
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src="photo/bigbanner3.png" />
+						<img alt="" src="photo/bigbanner3.png" width="100%"/>
 						<div class="carousel-caption">
 							
 						</div>
@@ -102,7 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active">
-								<img alt="" src="photo/car.png" />
+								<img alt="" src="photo/car.png" width="100%"/>
 								<div class="carousel-caption">
 									<!-- <h4>
 										产品中心
@@ -111,7 +111,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 							</div>
 							<div class="item">
-								<img alt="" src="photo/car.png" />
+								<img alt="" src="photo/car.png" width="100%"/>
 								<div class="carousel-caption">
 									<!-- <h4>
 										解决方案
@@ -132,50 +132,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="row clearfix" >
 						<div class="col-md-12 column">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption" style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
@@ -186,50 +186,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="row clearfix">
 						<div class="col-md-12 column">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3" >
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-xs-3">
 									<div class="thumbnail" style="border:0px">
 										<img alt="300x200" src="photo/hangxin.png" />
 										<div class="caption"style="margin-left:-10px">
 											
 										
 											<p>
-												<a class="btn" href="#">收单作业平台</a>
+												<a class="btn" href="${pageContext.request.contextPath}/home/main.do">收单作业平台</a>
 											</p>
 										</div>
 									</div>

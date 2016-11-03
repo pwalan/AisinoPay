@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:1300px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:1300px; margin-top:-20px;">
 			  
 			  
 		<div class="totalDiv" style="width:80%">
@@ -93,7 +93,7 @@
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着银行卡收单业务的蓬勃发展，收单银行之间的竞争日益激烈。为拓展收单商户，加强银行与收单商户之间的业务衔接，并为商户提供更优质贴心的金融服务，特开发中小商户进销存系统，旨在为中小商户提供一套易于使用的小型进销存系统，并在此基础上集成银行卡收单的相关功能。系统分为柜员管理、商品库管、商品销售、商品退货、交易查询、银行卡收单等业务模块。       
         </div>
         <div class="sol_img">
-        <img alt="" src="img/solution/comercial.png" style="text-align:center;margin-top:40px"></div>
+        <img alt="" src="img/solution/comercial.png" style="text-align:center;margin-top:40px" width="100%"></div>
         <div style="margin-top:40px;" >
         <hr class="lineUnsel_sol">
         </div>

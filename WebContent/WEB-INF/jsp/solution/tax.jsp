@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:1700px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:1700px; margin-top:-20px;">
 			 
 			 <div class="totalDiv" style="width:80%">
 <!-- 业务需求模块 -->
@@ -93,7 +93,7 @@
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国税刷卡缴税系统，旨在通过将办税服务厅业务系统与银行卡收单系统的对接，将POS终端部署到办税服务厅，从而改变传统模式下的缴税方式，减少纳税人传统缴税流程中来回奔波于银行和办税服务厅的诸多不便。总体流程如下：      
         </div>
         <div class="sol_img">
-        <img id="img_tax" alt="" src="img/solution/tax.png">
+        <img id="img_tax" alt="" src="img/solution/tax.png" width="100%">
         </div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
@@ -128,9 +128,10 @@
           <div class="sol_content">
            <span style="color:blue;">■</span>
            <span>内蒙工行&amp;国税</span>
-           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
+           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
            <span>新疆工行&amp;地税</span>
-           <span style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■</span>
+           <br/>
+           <span style="color:blue;">■</span>
            <span>陕西工行&amp;国税</span>
           
            </div>

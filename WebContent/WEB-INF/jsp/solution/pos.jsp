@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:1400px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:1400px; margin-top:-20px;">
 			 
 			 <div class="totalDiv" style="width:80%">
 <!-- 业务需求模块 -->
@@ -96,7 +96,7 @@
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系统分为前台无线POS终端和后台服务系统两部分。前台部分负责临时停放机动车辆的信息录入、驶出确认、刷卡缴费和凭条打印等。后台部分负责停车场信息管理、收费员信息管理、临时停放车辆信息管理、应收费用计算及与银行主机交互等。   
         </div>
         <div class="sol_img">
-        <img alt="" src="img/solution/car.png">
+        <img alt="" src="img/solution/car.png" width="100%">
         <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">

@@ -52,7 +52,7 @@
          	<!-- 左侧菜单 -->
          	
          	
-			<div class="col-md-3" style="background-color:#faf8f3; height:2700px; margin:-20px 0 0 0;">
+			<div class="col-md-3 col-xs-3" style="background-color:#faf8f3; height:1700px; margin:-20px 0 0 0;">
 			    <div class="col-md-12" style="margin-top:20px">
 					<div class="leftTitle1" id="leftTitle1_solution" >解决方案</div>
 					<div class="leftTitle2" id="leftTitle2_solution">Solution</div>  		 
@@ -69,7 +69,7 @@
 			</div>
 			
 			 <!-- 右侧具体内容 -->
-			 <div class="col-md-9  column" style="background-color:#faf8f3; height:2700px; margin-top:-20px;">
+			 <div class="col-md-9 col-xs-9 column" style="background-color:#faf8f3; height:1700px; margin-top:-20px;">
 			  
 			  
 		<div class="totalDiv" style="width:80%">
@@ -99,7 +99,7 @@
     
         </div>
         <div class="sol_img">
-        <img id="img_medical" alt="" src="img/solution/medical.png">
+        <img id="img_medical" alt="" src="img/solution/medical.png" width="100%">
         <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
         <div style="margin-top:40px;">
         <hr class="lineUnsel_sol">
