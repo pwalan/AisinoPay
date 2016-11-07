@@ -9,5 +9,10 @@ import com.aisino.finance.aisinopay.pojo.Region;
  *
  */
 public interface IRegionDao {
+	/**
+	 * 通过父级id找到地区
+	 * @param parentId
+	 * @return 地区列表
+	 */
 	public List<Region> findRegionByParentId(Double parentId);
 }

@@ -24,7 +24,7 @@ import com.aisino.finance.aisinopay.pojo.User;
 import com.google.gson.Gson;
 
 /**
- * 用户登录注册跳转控制
+ * 用户登录注册控制
  * 
  * @author AlanP
  *
@@ -55,12 +55,20 @@ public class UserContorller {
 		this.regionDao = regionDao;
 	}
 
+	/**
+	 * 页面中的数据
+	 * @return 用户信息
+	 */
 	@ModelAttribute("user")
 	public User getUser() {
 		User user = new User();
 		return user;
 	}
 
+	/**
+	 * 跳转到登录界面
+	 * @return
+	 */
 	@RequestMapping("/tologin")
 	public ModelAndView tologin() {
 		ModelAndView mav = new ModelAndView();
@@ -68,6 +76,13 @@ public class UserContorller {
 		return mav;
 	}
 
+	/**
+	 * 登录操作
+	 * @param user
+	 * @param request
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/login")
 	public ModelAndView login(User user, HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();
@@ -87,6 +102,10 @@ public class UserContorller {
 		return mav;
 	}
 
+	/**
+	 * 跳转到注册界面
+	 * @return
+	 */
 	@RequestMapping("/toregister")
 	public ModelAndView toregister() {
 		ModelAndView mav = new ModelAndView();
@@ -94,6 +113,13 @@ public class UserContorller {
 		return mav;
 	}
 
+	/**
+	 * 注册操作
+	 * @param user
+	 * @param request
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/register")
 	public ModelAndView register(User user, HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();
@@ -110,6 +136,13 @@ public class UserContorller {
 		return mav;
 	}
 	
+	/**
+	 * 验证用户名是否已存在（ajax validate remote验证）
+	 * @param username
+	 * @param session
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/veryuname")
 	public @ResponseBody String veryuname(String username, HttpSession session, HttpServletResponse response) {
 		System.out.println(username);
@@ -121,6 +154,13 @@ public class UserContorller {
 		return "false";
 	}
 
+	/**
+	 * 验证码是否输入正确
+	 * @param code
+	 * @param session
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/verycode")
 	public @ResponseBody String verycode(String code, HttpSession session, HttpServletResponse response) {
 		System.out.println(code);
@@ -132,6 +172,11 @@ public class UserContorller {
 		return "false";
 	}
 	
+	/**
+	 * 注册中获取省市县信息，三级联动
+	 * @param request
+	 * @param response
+	 */
 	@SuppressWarnings("rawtypes")
 	@RequestMapping("/getregion")
 	public void getregion(HttpServletRequest request, HttpServletResponse response) {
