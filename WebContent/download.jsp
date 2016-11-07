@@ -2,7 +2,7 @@
 <%@page import="javax.servlet.RequestDispatcher"%>
 <%  
   response.setContentType("application/x-download");//设置为下载application/x-download  
-  String filedownload = "/photo/口语.docx";//即将下载的文件的相对路径  
+  String filedownload = "/photo/111.docx";//即将下载的文件的相对路径  
   String filedisplay = "a.docx";//下载文件时显示的文件保存名称  
   String filenamedisplay = URLEncoder.encode(filedisplay,"UTF-8");  
   response.addHeader("Content-Disposition","attachment;filename=" + filedisplay);  

@@ -7,13 +7,17 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * 
  * 首页跳转控制
- *
+ * @author Saber_Lion
+ * 
  */
 
 @Controller
 @RequestMapping("/home")
 public class HomePageController {
-	
+	/**
+	 * @author Saber_Lion
+	 * @return
+	 */
 	@RequestMapping("/index")
 	public ModelAndView index(){
 		ModelAndView mav=new ModelAndView();
@@ -22,6 +26,7 @@ public class HomePageController {
 	}
 
 	/**
+	 * 
 	 * 产品中心跳转控制
 	 */
 	@RequestMapping("/t8pay")

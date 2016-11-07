@@ -7,6 +7,7 @@
 <link href="css/CSS.css" rel="stylesheet">
 <script type="text/javascript" src="js/airpay.js"></script>
 <title>联迪E520</title>
+
 <style type="text/css">
 body {
 	font-family: 微软雅黑;
