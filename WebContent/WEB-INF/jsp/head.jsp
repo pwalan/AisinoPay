@@ -90,7 +90,7 @@ function removeDlg(id)
 </head>
 
 <body>
-	<div class="col-md-offset-10">
+	<div class="col-md-offset-10 col-xs-offset-10">
 		<a href="${pageContext.request.contextPath}/home/login.do">登录</a> <a href="#">注册</a>
 
 
