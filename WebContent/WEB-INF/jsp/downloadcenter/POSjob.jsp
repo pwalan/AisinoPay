@@ -75,7 +75,7 @@
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
 				<div class="col-md-3 col-xs-3"
-					style="background-color: #faf8f3; height: 700px; margin: -20px 0 0 0;">
+					style="background-color: #faf8f3; height: 600px; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">下载中心</div>
 						<div class="leftTitle2" id="leftTitle2_solution">Download
@@ -95,7 +95,7 @@
 				</div>
 				<!-- 右侧具体内容 -->
 				<div class="col-md-9  column col-xs-9"
-					style="background-color: #faf8f3; height: 700px; margin-top: -20px;">
+					style="background-color: #faf8f3; height: 900px; margin-top: -20px;">
 					<br> <br>
 					<div style="font-size:15px;">
 						首页 > 下载中心 ><span>POS收单作业系统</span>
@@ -104,7 +104,7 @@
 
 					<!-- 文档下载/产品介绍模块 -->
 
-					<div class="subDiv" style="height: 500px;" id="t8_doc_product">
+					<div class="subDiv" style="height: 600px;" id="t8_doc_product">
 						<table class="subTable">
 							<tr>
 								<td>
@@ -131,52 +131,52 @@
 												收单作业系统业务流程.pptx</div>
 											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 135px;">
-												5.35M</div>
-											<div class="download_cmd" style="margin-top: 75px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="flow_download_func()">
+													onClick="flow_download_func()" align="right"
+													style="margin-top: 75px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 95px;margin-right: 25px">5.35M</p>
 											</div>
 											<div id="vline1" class="download_vline"
 												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 200px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/download/icon_doc.png" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 215px;" onClick="operation_download_func()">
+												style="margin-top: 85px;" onClick="operation_download_func()">
 												收单作业系统操作手册（管理员版）.docx</div>
-											<div class="download_time" style="margin-top: 260px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 265px;">
-												41K</div>
-											<div class="download_cmd" style="margin-top: 205px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="operation_download_func()">
+													onClick="operation_download_func()" align="right"
+													style="margin-top: 75px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 95px;margin-right: 30px">41K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 200px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 330px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/download/icon_ppt.png" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 345px;" onClick="org_download_func()">
+												style="margin-top: 85px;" onClick="org_download_func()">
 												收单作业系统机构设置培训.pptx</div>
-											<div class="download_time" style="margin-top: 390px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 395px;">
-												5.35M</div>
-											<div class="download_cmd" style="margin-top: 335px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="org_download_func()">
+													onClick="org_download_func()" align="right"
+													style="margin-top: 75px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 95px;margin-right: 25px">5.35M</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 330px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 

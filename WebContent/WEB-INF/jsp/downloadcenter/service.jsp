@@ -16,7 +16,7 @@
 	src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script
-	src="http://cdn.sta"WebContent/WEB-INF/jsp/downloadcenter/service.jsp"tic.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>下载中心</title>
 </head>
 
@@ -94,156 +94,146 @@
 					</div>
 				</div>
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column col-xs-9"
+				
+				<div class="col-md-9 col-xs-9"
 					style="background-color: #faf8f3; height: 700px; margin-top: -20px;">
 					<br> <br>
 					<div style="font-size:15px;">
 						首页 > 下载中心 ><span>专业化服务系统</span>
 					</div>
 					<hr style="border:1px solid rgb(0,78,162);">
+					<div class="row">
+						<!-- 文档下载/产品介绍模块 -->
+						<div class="col-md-6  col-xs-6" style="background-color: #faf8f3;">
 
-					<!-- 文档下载/产品介绍模块 -->
-					<div
-						style="position:absolute;margin-left:0px;width:400px;height:450px;">
-						<table
-							style="border:solid 1px rgb(208,208,208);;cellpadding:0;cellspacing:0;width:100%;margin-top:30px;height:100%;">
-							<tr>
-								<td style="height:50px;">
-									<div
-										style="position:absolute;margin-left:25px;margin-top:-15px;font-size:18px;font-family:微软雅黑;">
-										<span style="cursor:pointer;color:#017cfe;"> 文档下载 </span>
-										<div class="lineSelDiv"
-											style="margin-top:0px;margin-left:-28px;">
-											<hr class="lineSel">
-										</div>
-									</div>
-								</td>
+							<div class="subDiv" style="height: 400px;" id="t8_doc_product">
+								<table class="subTable">
+									<tr>
+										<td>
+											<div id="docproductSub"
+												style="position: relative; height: 100%;">
 
-							</tr>
-							<tr>
-								<td style="height:120px;">
-									<div style="position:relative;">
-										<div class="download_pdfimg"
-											style="position:absolute;margin-top:-45px;">
-											<img src="img/download/icon_doc.png" width="63" height="71">
-										</div>
-										<div id="t8_filename" class="download_filename"
-											style="margin-left:105px;margin-top:-35px;"
-											onClick="docUserGuideDownloadFunc()">专业化服务系统用户手册.doc</div>
-										<div class="download_time"
-											style="margin-left:105px;margin-top:5px;">
-											上传时间：2016-08-02 18:21</div>
-										<div class="download_size"
-											style="margin-top:5px;margin-left:345px;">10285K</div>
-										<div class="download_cmd"
-											style="margin-top:-48px;margin-left:355px;">
-											<img alt="下载文档" src="img/t8/download.jpg" width="30"
-												height="30" onClick="docUserGuideDownloadFunc()">
-										</div>
-										<div id="vline1" class="download_vline"
-											style="margin-top:-60px;margin-left:340px;">
-											<hr size="40" class="download_vline_inner">
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td style="height:120px;">
-									<div style="position:relative;">
-										<div class="download_pdfimg"
-											style="position:absolute;margin-top:-45px;">
-											<img src="img/download/icon_ppt.png" width="63" height="71">
-										</div>
-										<div id="t8_filename" class="download_filename"
-											style="margin-left:105px;margin-top:-35px;"
-											onClick="docIntroductionDownloadFunc()">专业划服务系统介绍.pptx
-										</div>
-										<div class="download_time"
-											style="margin-left:105px;margin-top:5px;">
-											上传时间：2016-08-02 18:21</div>
-										<div class="download_size"
-											style="margin-top:5px;margin-left:345px;">7743K</div>
-										<div class="download_cmd"
-											style="margin-top:-48px;margin-left:355px;">
-											<img alt="下载文档" src="img/t8/download.jpg" width="30"
-												height="30" onClick="docIntroductionDownloadFunc()">
-										</div>
-										<div id="vline1" class="download_vline"
-											style="margin-top:-60px;margin-left:340px;">
-											<hr size="40" class="download_vline_inner">
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td style="height:120px;">&nbsp;</td>
+												<div class="title_airpay" style="margin-top: 10px;">
+													<span id="font_docDownload"
+														style="cursor: pointer; color: #017cfe;"
+														onClick="t8DocDownLoad()"> 文档下载 </span>
+												</div>
 
-							</tr>
+												<!-- 文档下载模块 -->
+												<div id="document_module" style="display: block;">
 
-							<tr>
-								<td>&nbsp;</td>
-							</tr>
-						</table>
-					</div>
-					<!-- 软件下载 -->
+													<div class="lineSelDiv">
+														<hr class="lineSel">
+													</div>
+													<div class="download_pdfimg"
+														style="position:absolute;margin-top:80px;">
+														<img src="img/download/icon_doc.png" width="50" height="60">
+													</div>
+													<div id="t8_filename" class="download_filename"
+														style="margin-left:100px;margin-top:85px;" onClick="docUserGuideDownloadFunc()">专业化服务系统用户手册.doc</div>
+													<div class="download_time" style="margin-left:100px;margin-top:130px;">
+														上传时间：2016-08-02 18:21</div>
+													<div class="" style="margin-top:20px;">
+														<img alt="下载文档" src="img/t8/download.jpg" width="30"
+															height="30" onClick="docUserGuideDownloadFunc()" align="right"
+															style="margin-top: 75px; margin-right: 20px"> <br />
+														<p align="right"
+															style="margin-top: 95px;margin-right: 15px">10285K</p>
+													</div>
+													<div id="vline1" class="download_vline"
+														style="margin-top:70px;">
+														<hr size="40" class="download_vline_inner">
+													</div>
 
-					<div
-						style="position:absolute;margin-left:435px;width:400px;height:450px;">
-						<table
-							style="border:solid 1px rgb(208,208,208);;cellpadding:0;cellspacing:0;width:100%;margin-top:31px;height:100%;">
-							<tr>
-								<td style="height:50px;">
-									<div
-										style="position:absolute;margin-left:25px;margin-top:-15px;font-size:18px;font-family:微软雅黑;">
-										<span style="cursor:pointer;color:#017cfe;"> 软件下载 </span>
-										<div class="lineSelDiv"
-											style="margin-top:0px;margin-left:-28px;">
-											<hr class="lineSel">
-										</div>
-									</div>
-								</td>
+													<div class="download_pdfimg"
+														style="position:absolute;margin-top:80px;">
+														<img src="img/download/icon_ppt.png" width="50"
+															height="60">
+													</div>
+													<div id="t8_filename" class="download_filename"
+														style="margin-left:100px;margin-top:85px;"
+														onClick="docIntroductionDownloadFunc()">专业划服务系统介绍.pptx</div>
+													<div class="download_time" style="margin-left:100px;margin-top:130px;">
+														上传时间：2016-08-02 18:21</div>
+													<div class="" style="margin-top:20px;">
+														<img alt="下载文档" src="img/t8/download.jpg" width="30"
+															height="30" onClick="docIntroductionDownloadFunc()"
+															align="right"
+															style="margin-top: 75px; margin-right: 20px"> <br />
+														<p align="right"
+															style="margin-top: 95px;margin-right: 15px">77430K</p>
+													</div>
+													<div id="vline1" class="download_vline"
+														style="margin-top:-60px;margin-left:340px;">
+														<hr size="40" class="download_vline_inner">
+													</div>
+												</div>
+												<!-- end document_module -->
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
 
-							</tr>
+						<!-- 软件下载 -->
+						<div class="col-md-6  col-xs-6" style="background-color: #faf8f3;">
 
-							<tr>
-								<td style="height:120px;">
+							<div class="subDiv" style="height: 400px;" id="t8_doc_product">
+								<table class="subTable">
+									<tr>
+										<td>
+											<div id="docproductSub"
+												style="position: relative; height: 100%;">
 
-									<div style="position:relative;">
-										<div class="download_pdfimg"
-											style="position:absolute;margin-top:-45px;">
-											<img src="img/pmss/mobile/Professional_V1.14.png" width="63"
-												height="71">
-										</div>
+												<div class="title_airpay" style="margin-top: 10px;">
+													<span id="font_docDownload"
+														style="cursor: pointer; color: #017cfe;"
+														onClick="t8DocDownLoad()"> 软件下载 </span>
+												</div>
 
-										<div id="t8_filename" class="download_filename"
-											style="margin-left:105px;margin-top:-35px;"
-											onClick="myScanFunc()">专业化服务系统手机端（安卓版）.apk</div>
-										<div class="download_time"
-											style="margin-left:105px;margin-top:5px;">
-											上传时间：2016-08-02 18:21</div>
-										<div class="download_size"
-											style="margin-top:5px;margin-left:345px;">2839K</div>
-										<div class="download_cmd"
-											style="margin-top:-48px;margin-left:355px;">
-											<img alt="下载文档" src="img/t8/download.jpg" width="30"
-												height="30" onClick="softApkDownloadFunc()">
-										</div>
-										<div id="vline1" class="download_vline"
-											style="margin-top:-60px;margin-left:340px;">
-											<hr size="40" class="download_vline_inner">
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>&nbsp;</td>
-							</tr>
-						</table>
+												<!-- 文档下载模块 -->
+												<div id="document_module" style="display: block;">
+
+													<div class="lineSelDiv">
+														<hr class="lineSel">
+													</div>
+													<div class="download_pdfimg"
+													style="position:absolute;margin-top:80px;">
+													<img src="img/pmss/mobile/Professional_V1.14.png" width="50" height="60">
+												</div>
+
+												<div id="t8_filename" class="download_filename"
+													style="margin-left:100px;margin-top:85px;"
+													onClick="myScanFunc()">专业化服务系统手机端(安卓版).apk</div>
+												<div class="download_time"
+													style="margin-left:100px;margin-top:130px;">
+													上传时间：2016-08-02 18:21</div>
+												<div class=""
+													style="margin-top:20px;">
+													<img alt="下载文档" src="img/t8/download.jpg" width="30"
+														height="30" onClick="myScanFunc()" align="right"
+																	style="margin-top: 75px; margin-right: 20px"> <br />
+														<p align="right"
+															style="margin-top: 95px;margin-right: 15px">2839K</p>
+												</div>
+												<div id="vline1" class="download_vline"
+													style="margin-top:70px;">
+													<hr size="40" class="download_vline_inner">
+												</div>
+																							
+												</div>
+												<!-- end document_module -->
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
 					</div>
 
 					<!-- end  文档下载/产品介绍模块-->
-
-				</div>
+				</div>		
 			</div>
 		</div>
 		<jsp:include page="../foot.jsp"></jsp:include>

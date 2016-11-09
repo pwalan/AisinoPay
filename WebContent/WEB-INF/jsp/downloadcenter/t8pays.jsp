@@ -117,26 +117,21 @@
 											<div class="lineSelDiv">
 												<hr class="lineSel">
 											</div>
-											<!-- <div class="lineUnselDiv">
-													<hr class="lineUnsel">
-												</div> -->
-
 											<div class="download_pdfimg" style="margin-top: 70px;">
-												<img src="img/t8/pdf.jpg" width="98" height="108">
+												<img src="img/t8/pdf.jpg">
 											</div>
 											<div id="t8_filename" class="download_filename"
 												style="margin-top: 85px;" onClick="t8_download_func()">
 												T8智能支付终端.pdf</div>
-											<!-- <div class="download_hline" style="margin-top: 115px;">
-													<hr class="download_hline_inner">
-												</div> -->
 											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 135px;">
-												5.35M</div>
-											<div class="download_cmd" style="margin-top: 75px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="t8_download_func()">
+													onClick="t8_download_func()" align="right"
+													style="margin-top: 75px; margin-right: 25px">
+													<br/><br/>
+													<p align="right" style="margin-top: 95px; margin-right: 25px">5.35M
+													</p>
 											</div>
 											<div id="vline1" class="download_vline"
 												style="margin-top: 70px;">
@@ -144,16 +139,10 @@
 											</div>
 										</div>
 										<!-- end document_module -->
-
-
 									</div>
-
 								</td>
-
 							</tr>
-
 						</table>
-
 					</div>
 					<!-- end  文档下载/产品介绍模块-->
 

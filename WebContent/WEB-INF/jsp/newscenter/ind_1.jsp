@@ -61,11 +61,10 @@
 			<div class="col-md-12 column">
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
-				<div class="col-md-3"
+				<div class="col-md-3 col-xs-3"
 					style="background-color:#faf8f3; height:700px; margin:-20px 0 0 0;">
 					<div class="col-md-12" style="margin-top:20px">
-						<div class="leftTitle1" id="leftTitle1_solution">新闻中心
-						</div>
+						<div class="leftTitle1" id="leftTitle1_solution">新闻中心</div>
 						<div class="leftTitle2" id="leftTitle2_solution">News Center
 						</div>
 						<div>
@@ -79,7 +78,7 @@
 					</div>
 				</div>
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column"
+				<div class="col-md-9  column col-xs-9"
 					style="background-color:#faf8f3; height:700px; margin-top:-20px;">
 					<br> <br>
 
@@ -99,9 +98,9 @@
 						</p>
 						<p style="line-height:1.75em;text-indent:2em;">
 							<span style="font-family:宋体;">我国目前采用了区分商户类别制定商户手续费，并按一定比例在发卡银行、卡组织以及收单机构之间分配的模式。分餐娱类、一般类、民生类、公益类四大类商户区别定价的体系，因为区别定价存在严重的套利空间，直接扰乱了线下银行卡交易的秩序，增加了银行卡业务风险。
-							线下银行卡POS收单定价机制认为的“借贷分离统一定价”是改变收单乱象的根本，多家支付机构也在积极的调整策略，今年初下发人行2015支付工作要点中也将借贷分离统一定价作为改革方向之一，不过2015年4月份发改委下发的关于《发改委关于完善银行卡刷卡手续费定价机制初步方案》中对于取消借贷分离，统一行业
-							类别存在疑义，不过也征求广大机构的意见，日前发改委已经下发了关于完善刷卡手继续定价机制有关问题的征求意见稿，已经根据广大机构的反馈初步确认取消行业分类，相关文件已经由中国清算协会下发到会员机构，虽然不是最终定稿，但是基本方向还是向着大家预想的方向发展，特别是收单费用由收单机构与商户协商，
-							将给收单机构更大的空间，通过提高服务赢得市场！未来的线下收单市场将迎来新一轮变革！</span>
+								线下银行卡POS收单定价机制认为的“借贷分离统一定价”是改变收单乱象的根本，多家支付机构也在积极的调整策略，今年初下发人行2015支付工作要点中也将借贷分离统一定价作为改革方向之一，不过2015年4月份发改委下发的关于《发改委关于完善银行卡刷卡手续费定价机制初步方案》中对于取消借贷分离，统一行业
+								类别存在疑义，不过也征求广大机构的意见，日前发改委已经下发了关于完善刷卡手继续定价机制有关问题的征求意见稿，已经根据广大机构的反馈初步确认取消行业分类，相关文件已经由中国清算协会下发到会员机构，虽然不是最终定稿，但是基本方向还是向着大家预想的方向发展，特别是收单费用由收单机构与商户协商，
+								将给收单机构更大的空间，通过提高服务赢得市场！未来的线下收单市场将迎来新一轮变革！</span>
 						</p>
 						<p style="text-indent:2em;">
 							<span style="font-family:宋体;"><br></span>
@@ -116,11 +115,9 @@
 						</p>
 					</div>
 				</div>
-
-
-				<jsp:include page="../foot.jsp"></jsp:include>
 			</div>
 		</div>
+		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
 </body>
 </html>

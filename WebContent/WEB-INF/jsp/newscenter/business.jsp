@@ -60,7 +60,7 @@
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
 				<div class="col-md-3 col-xs-3"
-					style="background-color: #faf8f3; height: 700px; margin: -20px 0 0 0;">
+					style="background-color: #faf8f3; height:100%; margin: -20px 0 0 0;">
 					<div class="col-md-12" style="margin-top: 20px">
 						<div class="leftTitle1" id="leftTitle1_solution">新闻中心</div>
 						<div class="leftTitle2" id="leftTitle2_solution">News Center
@@ -77,7 +77,7 @@
 				</div>
 				<!-- 右侧具体内容 -->
 				<div class="col-md-9  column col-xs-9"
-					style="background-color: #faf8f3; height: 700px; margin-top: -20px;">
+					style="background-color: #faf8f3; height:100%; margin-top: -20px;">
 					<br> <br>
 					<div style="font-size: 15px;">
 						首页 > 新闻中心 ><span>业务动态</span>
@@ -85,19 +85,19 @@
 					<hr style="border: 1px solid rgb(0, 78, 162);">
 
 					<div>
-						<img src="img/news/banner.png" width="825" height="86">
+						<img src="img/news/banner.png" width="100%" height="86">
 					</div>
 
 					<form name="form_dynamiclist" id="form_dynamiclist" method="post"
 						action="newsQuery.action">
 						<center>
 							<table id="tb_newsInfo"
-								style="margin-top: 4px; margin-left: -70px;">
+								style="margin-top: 4px; text-align: left;">
 
 
 								<tr>
-									<td name="leftCol" width="90px" height="23px" align="right"
-										style="font-weight: bold; color: #017cfe;">●</td>
+									<td name="leftCol" height="23px" align="right"
+										style="font-weight: bold; color: #017cfe;text-align: left;">●</td>
 									<td name="midCol" width="720px"
 										style="text-align: left; font-size: 15px;"><a
 										href="${pageContext.request.contextPath}/home/bus_1.do"
@@ -108,8 +108,8 @@
 								</tr>
 
 								<tr>
-									<td name="leftCol" width="90px" height="23px" align="right"
-										style="font-weight: bold; color: #017cfe;">●</td>
+									<td name="leftCol" height="23px" align="right"
+										style="font-weight: bold; color: #017cfe;text-align: left;">●</td>
 									<td name="midCol" width="720px"
 										style="text-align: left; font-size: 15px;"><a
 										href="${pageContext.request.contextPath}/home/bus_2.do"
@@ -119,8 +119,8 @@
 
 								</tr>
 								<tr>
-									<td name="leftCol" width="90px" height="23px" align="right"
-										style="font-weight: bold; color: #017cfe;">●</td>
+									<td name="leftCol" height="23px" align="right"
+										style="font-weight: bold; color: #017cfe;text-align: left;">●</td>
 									<td name="midCol" width="720px"
 										style="text-align: left; font-size: 15px;"><a
 										href="${pageContext.request.contextPath}/home/bus_3.do"
@@ -130,8 +130,8 @@
 
 								</tr>
 								<tr>
-									<td name="leftCol" width="90px" height="23px" align="right"
-										style="font-weight: bold; color: #017cfe;">●</td>
+									<td name="leftCol" height="23px" align="right"
+										style="font-weight: bold; color: #017cfe;text-align: left;">●</td>
 									<td name="midCol" width="720px"
 										style="text-align: left; font-size: 15px;"><a
 										href="${pageContext.request.contextPath}/home/bus_4.do"
@@ -143,8 +143,6 @@
 							</table>
 						</center>
 					</form>
-
-
 				</div>
 			</div>
 		</div>

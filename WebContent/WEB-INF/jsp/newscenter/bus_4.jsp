@@ -61,11 +61,10 @@
 			<div class="col-md-12 column">
 				<jsp:include page="../head.jsp"></jsp:include>
 				<!-- 左侧菜单 -->
-				<div class="col-md-3"
+				<div class="col-md-3 col-xs-3"
 					style="background-color:#faf8f3; height:700px; margin:-20px 0 0 0;">
 					<div class="col-md-12" style="margin-top:20px">
-						<div class="leftTitle1" id="leftTitle1_solution">新闻中心
-						</div>
+						<div class="leftTitle1" id="leftTitle1_solution">新闻中心</div>
 						<div class="leftTitle2" id="leftTitle2_solution">News Center
 						</div>
 						<div>
@@ -79,7 +78,7 @@
 					</div>
 				</div>
 				<!-- 右侧具体内容 -->
-				<div class="col-md-9  column"
+				<div class="col-md-9  column col-xs-9"
 					style="background-color:#faf8f3; height:700px; margin-top:-20px;">
 					<br> <br>
 
@@ -103,10 +102,9 @@
 						</p>
 					</div>
 				</div>
-
-				<jsp:include page="../foot.jsp"></jsp:include>
 			</div>
 		</div>
+		<jsp:include page="../foot.jsp"></jsp:include>
 	</div>
 </body>
 </html>

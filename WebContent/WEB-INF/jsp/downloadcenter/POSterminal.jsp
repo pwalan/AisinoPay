@@ -113,7 +113,7 @@
 				</div>
 				<!-- 右侧具体内容 -->
 				<div class="col-md-9  column col-xs-9"
-					style="background-color: #faf8f3; height: 1500px; margin-top: -20px;">
+					style="background-color: #faf8f3; height: 1800px; margin-top: -20px;">
 					<br> <br>
 					<div style="font-size:15px;">
 						首页 > 下载中心 ><span>POS终端</span>
@@ -122,7 +122,7 @@
 
 					<!-- 文档下载/产品介绍模块 -->
 
-					<div class="subDiv" style="height: 1300px;" id="t8_doc_product">
+					<div class="subDiv" style="height: 1500px;" id="t8_doc_product">
 						<table class="subTable">
 							<tr>
 								<td>
@@ -150,166 +150,166 @@
 												百富D210无线POS终端.pdf</div>
 											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 135px;">
-												944K</div>
-											<div class="download_cmd" style="margin-top: 75px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="D210_download_func()">
+													onClick="D210_download_func()" align="right"
+													style="margin-top: 75px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 95px;margin-right: 25px">944K</p>
 											</div>
 											<div id="vline1" class="download_vline"
 												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 200px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 215px;" onClick="S80_download_func()">
+												style="margin-top: 85px;" onClick="S80_download_func()">
 												百富S80台式热敏POS.pdf</div>
-											<div class="download_time" style="margin-top: 260px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 265px;">
-												939K</div>
-											<div class="download_cmd" style="margin-top: 205px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="S80_download_func()">
+													onClick="S80_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">939K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 200px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 330px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 345px;" onClick="S90_download_func()">
+												style="margin-top: 85px;" onClick="S90_download_func()">
 												百富S90手持无线POS.pdf</div>
-											<div class="download_time" style="margin-top: 390px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 395px;">
-												1000K</div>
-											<div class="download_cmd" style="margin-top: 335px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="S90_download_func()">
+													onClick="S90_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">1000K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 330px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 460px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 475px;" onClick="SP30_download_func()">
+												style="margin-top: 85px;" onClick="SP30_download_func()">
 												百富SP30 MIS POS.pdf</div>
-											<div class="download_time" style="margin-top: 520px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 525px;">
-												849K</div>
-											<div class="download_cmd" style="margin-top: 465px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="SP30_download_func()">
+													onClick="SP30_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">849K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 460px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 590px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 605px;" onClick="E530_download_func()">
+												style="margin-top: 85px;" onClick="E530_download_func()">
 												联迪E530台式热敏POS.pdf</div>
-											<div class="download_time" style="margin-top: 650px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 655px;">
-												10863K</div>
-											<div class="download_cmd" style="margin-top: 595px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="E530_download_func()">
+													onClick="E530_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">10863K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 590px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 720px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 735px;" onClick="E550_download_func()">
+												style="margin-top: 85px;" onClick="E550_download_func()">
 												联迪E550无线POS.pdf</div>
-											<div class="download_time" style="margin-top: 780px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 785px;">
-												10880K</div>
-											<div class="download_cmd" style="margin-top: 725px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="E550_download_func()">
+													onClick="E550_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">10880K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 720px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 850px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 865px;" onClick="M35_download_func()">
+												style="margin-top: 85px;" onClick="M35_download_func()">
 												联迪M35 mPos.pdf</div>
-											<div class="download_time" style="margin-top: 910px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 915px;">
-												1146K</div>
-											<div class="download_cmd" style="margin-top: 855px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="M35_download_func()">
+													onClick="M35_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">1146K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 850px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 980px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 995px;" onClick="M35List_download_func()">
+												style="margin-top: 85px;" onClick="M35List_download_func()">
 												联迪M35兼容性列表.pdf</div>
-											<div class="download_time" style="margin-top: 1040px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 1045px;">
-												735K</div>
-											<div class="download_cmd" style="margin-top: 985px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="M35List_download_func()">
+													onClick="M35List_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">735K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 980px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 
-											<div class="download_pdfimg" style="margin-top: 1110px;">
+											<div class="download_pdfimg" style="margin-top: 70px;">
 												<img src="img/t8/pdf.jpg" width="98" height="108">
 											</div>
 											<div id="t8_filename" class="download_filename"
-												style="margin-top: 1125px;" onClick="E520_download_func()">
+												style="margin-top: 85px;" onClick="E520_download_func()">
 												联迪E520 MIS POS.pdf</div>
-											<div class="download_time" style="margin-top: 1170px;">
+											<div class="download_time" style="margin-top: 130px;">
 												上传时间：2015-03-16 13:15</div>
-											<div class="download_size" style="margin-top: 1175px;">
-												12477K</div>
-											<div class="download_cmd" style="margin-top: 1115px;">
+											<div class="" style="margin-top: 20px;">
 												<img alt="下载文档" src="img/t8/download.jpg"
-													onClick="E520_download_func()">
+													onClick="E520_download_func()" align="right"
+													style="margin-top: 55px; margin-right: 25px"> <br /> <br />
+												<p align="right" style="margin-top: 75px;margin-right: 25px">12477K</p>
 											</div>
 											<div id="vline1" class="download_vline"
-												style="margin-top: 1110px;">
+												style="margin-top: 70px;">
 												<hr size="40" class="download_vline_inner">
 											</div>
 										</div>
